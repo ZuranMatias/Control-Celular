@@ -1,0 +1,11 @@
+.wrapper .title {
+    @include divider-title;
+}
+
+.wrapper .title.red {
+    @include divider-title($red);
+}
+
+.wrapper .title.black {
+    @include divider-title($black);
+}

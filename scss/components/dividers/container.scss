@@ -1,0 +1,11 @@
+.wrapper {
+    @include divider-content
+}
+
+.wrapper.red {
+    @include divider-content($red)
+}
+
+.wrapper.black {
+    @include divider-content($black)
+}

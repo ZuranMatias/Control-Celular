@@ -1,0 +1,57 @@
+@mixin apply-shadow-title() {
+    &:after {
+        content: '';
+        display: block;
+        height: 38px;
+        position: absolute;
+        right: -35px;
+        top: 46.8px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        width: 35px;
+        background: rgba(0, 0, 0, 0) url("./shadow.png") repeat scroll 0% 0% / auto padding-box border-box;
+    }
+    
+    &:before {
+        content: '';
+        display: block;
+        height: 38px;
+        left: -35px;
+        position: absolute;
+        top: 46.8px;
+        width: 35px;
+        background: rgba(0, 0, 0, 0) url("./shadow.png") repeat scroll 0% 0% / auto padding-box border-box;
+    }
+}
+
+@mixin divider-title($bgColor: rgb(58, 197, 255)) {
+    color: rgb(255, 255, 255);
+    letter-spacing: 3.6px;
+    position: absolute;
+
+    text-align: center;
+    text-transform: uppercase;
+    top: -46.8px; //Check it out
+    background: $bgColor url("./overlay.png") repeat scroll 0% 0% / auto padding-box border-box; //Important
+
+    //Things that should change with screen size
+    font: 700 14.4px / 46.8px "Source Sans Pro", sans-serif;
+    width: 360px;
+    padding: 7.2px;
+
+    //Important stuff
+
+    @include apply-shadow-title;
+}
+
+@mixin divider-content($bgColor: rgb(58, 197, 255)) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.75);
+    position: relative;
+    width: 100%;
+    background: $bgColor url("./overlay.png") repeat scroll 0% 0% / auto padding-box border-box;
+    font: 16px / 24px "Source Sans Pro", sans-serif;
+    padding: 50px 0px 112px;
+    bottom: 0;
+}

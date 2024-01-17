@@ -1,0 +1,12 @@
+//Basics
+@import "./basics/reset.scss";
+@import "./basics/colors.scss";
+
+//Components
+@import "./components/dividers/mixins.scss";
+@import "./components/dividers/titles.scss";
+@import "./components/dividers/container.scss";
+
+@import "./components/navbar.scss";
+@import "./components/header.scss";
+@import "./components/section-title.scss";
