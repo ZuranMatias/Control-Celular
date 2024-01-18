@@ -183,13 +183,18 @@ ul {
   }
   #nav.sticky {
     position: fixed;
+    transform: translateY(10vh);
   }
   #nav.sticky ul {
     width: 775px;
+    backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.6);
   }
   #nav.sticky ul:hover {
     background-color: rgba(0, 0, 0, 0.9);
+  }
+  #nav.sticky ul li a {
+    z-index: 3;
   }
   #nav.static {
     position: fixed;

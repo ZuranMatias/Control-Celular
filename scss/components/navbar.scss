@@ -36,22 +36,24 @@
 
   #nav.sticky {
     position: fixed;
-    //top: 0px;
+    transform: translateY(10vh);
+
     & ul {
       width: 775px;
+      backdrop-filter: blur(10px);
 
       background-color: $navbar-sticky-color;
       &:hover {
         background-color: $navbar-sticky-color-hover;
       }
       & li a {
-        //font-size: 0.7em;
+        z-index: 3;
       }
     }
   }
 
   #nav.static {
-    position:fixed;
+    position: fixed;
     //top: 0px;
     & ul {
       width: 100%;
@@ -64,15 +66,15 @@
         background-color: $navbar-static-color-hover;
       }
 
-      & li a{
+      & li a {
         color: rgba(255, 255, 255, 1);
-          text-transform: uppercase;
-          text-decoration: none;
-          //font-size: 0.8em;
-          letter-spacing: 0.25em;
-          height: 5em;
-          line-height: 5em;
-          outline: 0;
+        text-transform: uppercase;
+        text-decoration: none;
+        //font-size: 0.8em;
+        letter-spacing: 0.25em;
+        height: 5em;
+        line-height: 5em;
+        outline: 0;
       }
     }
   }

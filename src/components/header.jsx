@@ -6,7 +6,6 @@ import { useEffect } from 'react'
 
 function Header() {
   const { ref, inView } = useInView({ threshold: 1 })
-  //At threshold one, if 100% of the element isn't visible, inView is false.
 
   useEffect(() => {
     console.log('Am I in view:', inView)
