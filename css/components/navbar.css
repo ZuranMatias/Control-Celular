@@ -41,4 +41,10 @@
   padding: 0 1.5em 0 1.5em;
 }
 
+@media screen and (max-width: 736px) {
+  #nav {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=navbar.css.map */
