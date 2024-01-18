@@ -1,50 +1,17 @@
-@media screen and (min-width: 737px) {
-  #nav {
-    display: block;
-    top: 2.5em;
-    left: 0;
-    width: 100%;
-    text-align: center;
-  }
-  #nav > ul > li {
-    display: inline-block;
-    text-align: center;
-    padding: 0 1.5em 0 1.5em;
-  }
-  #nav > ul > li > a,
-  #nav > ul > li > span {
-    display: block;
-    color: #eee;
-    color: rgba(255, 255, 255, 0.75);
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 0.7em;
-    letter-spacing: 0.25em;
-    height: 5em;
-    line-height: 5em;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-    outline: 0;
-  }
-}
-#nav > ul {
-  display: inline-block;
-  border-radius: 0.35em;
-  border-top-left-radius: 0.35em;
-  border-top-right-radius: 0.35em;
-  border-bottom-right-radius: 0.35em;
-  border-bottom-left-radius: 0.35em;
-  box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
-  padding: 0 1.5em 0 1.5em;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 7 |     transition: $transition-speed;
+ *   |                 ^^^^^^^^^^^^^^^^^
+ *   '
+ *   scss\components\navbar.scss 7:17  root stylesheet */
 
-@media screen and (max-width: 736px) {
-  #nav {
-    display: none;
-  }
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 7 \2502      transition: $transition-speed;\d\a   \2502                  ^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\components\\navbar.scss 7:17  root stylesheet";
 }
-
-/*# sourceMappingURL=navbar.css.map */

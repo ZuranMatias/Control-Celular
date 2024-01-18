@@ -1,11 +1,26 @@
 import React from 'react'
-import Navbar from './navbar/navbar'
+import Navbar from './navbar/navbar/navbar'
+
+import { useInView } from 'react-intersection-observer'
+import { useEffect } from 'react'
 
 function Header() {
-  
+  const { ref, inView } = useInView({ threshold: 1 })
+  //At threshold one, if 100% of the element isn't visible, inView is false.
+
+  useEffect(() => {
+    console.log('Am I in view:', inView)
+  }, [inView])
+
   return (
-    <div style={{marginBottom: "80px", marginTop: "40px"}}>
-    <Navbar/>
+    <div style={{}}>
+      <div className="header">
+        <div ref={ref}> <Navbar isVisible={inView} /> </div>
+        <div className="content" style={{ paddingTop: '10vh' }}>
+          <img src="./home_picture_desktop.png" alt="" />
+        </div>
+        <div className="background" />
+      </div>
     </div>
   )
 }

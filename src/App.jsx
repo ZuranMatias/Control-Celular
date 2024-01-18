@@ -17,6 +17,9 @@ function App() {
         <Wrapper color={'blue'}> </Wrapper>
         <Wrapper color={'red'}> </Wrapper>
         <Wrapper color={'black'}> </Wrapper>
+        <Wrapper color={'blue'}> </Wrapper>
+        <Wrapper color={'red'}> </Wrapper>
+        <Wrapper color={'black'}> </Wrapper>
       </BrowserRouter>
     </>
   )
