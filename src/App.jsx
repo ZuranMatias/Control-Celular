@@ -11,7 +11,6 @@ import '../css/app.css'
 function App() {
   return (
     <>
-      <BrowserRouter>
         <SidebarContainer/>
         <Header />
         <Wrapper color={'blue'}> </Wrapper>
@@ -20,7 +19,6 @@ function App() {
         <Wrapper color={'blue'}> </Wrapper>
         <Wrapper color={'red'}> </Wrapper>
         <Wrapper color={'black'}> </Wrapper>
-      </BrowserRouter>
     </>
   )
 }
