@@ -9,6 +9,7 @@
         transform: matrix(-1, 0, 0, 1, 0, 0);
         width: 35px;
         background: rgba(0, 0, 0, 0) url("./shadow.png") repeat scroll 0% 0% / auto padding-box border-box;
+        @media screen and (max-width: 736px) { display: none; }
     }
     
     &:before {
@@ -20,6 +21,7 @@
         top: 46.8px;
         width: 35px;
         background: rgba(0, 0, 0, 0) url("./shadow.png") repeat scroll 0% 0% / auto padding-box border-box;
+        @media screen and (max-width: 736px) { display: none; }
     }
 }
 
@@ -41,6 +43,8 @@
     //Important stuff
 
     @include apply-shadow-title;
+
+    @media screen and (max-width: 736px) { max-width: 60vw; }
 }
 
 @mixin divider-content($bgColor: rgb(58, 197, 255)) {
