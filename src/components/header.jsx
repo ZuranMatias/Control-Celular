@@ -13,7 +13,7 @@ function Header() {
 
   return (
     <div style={{}}>
-      <div className="header" style={{height:height}}>
+      <div className="header">
         <div ref={ref}> <Navbar isVisible={inView} /> </div>
           {<HeaderCarousel height={height} upperMargin={upperMargin}/>}
       </div>

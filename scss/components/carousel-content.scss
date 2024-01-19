@@ -1,0 +1,42 @@
+.carousel-title {
+    color: $title-blue;
+    letter-spacing: 0.25em;
+    font-size: 2em;
+    font-weight: 800;
+
+    @include stroke($title-blue-dark);
+}
+
+.carousel-content-container.right{
+    align-items: flex-end;
+    text-align: end;
+}
+
+.carousel-content-container.left{
+    align-items: flex-start;
+    text-align: start;
+}
+
+.carousel-content-container.center{
+    align-items: center;
+    text-align: center;
+}
+
+.carousel-content-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+
+    & *{ 
+        font-family: 'Montserrat', sans-serif; 
+    }
+    & h3{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 736px) { 
+    .carousel-title { padding-top: 10vh; } 
+    .carousel-content-container {align-items: center !important; text-align: center !important;}
+}

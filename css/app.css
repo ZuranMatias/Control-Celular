@@ -8,6 +8,12 @@ ul {
   list-style: none;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../public/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .wrapper .title {
   color: rgb(255, 255, 255);
   letter-spacing: 3.6px;
@@ -242,26 +248,12 @@ ul {
     display: none;
   }
 }
-/* .header .background {
-    background-size: cover;
-    background-image: url("../../public/Images/teen2.png");
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-
-    transform: scale(1.1);
-    filter: blur(5px) brightness(0.7);
-
-    top: 0;
-} */
 .header .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0);
-  color: white;
+  background-color: black;
 }
 
 #SECTION_3 {
@@ -598,18 +590,21 @@ ul {
   margin: 0 15px 0 15px;
 }
 
+.carousel-height {
+  height: 80vh;
+}
+
 .control-dots {
   text-align: start !important;
 }
 
 .carousel-content {
-  padding-top: 72.18px;
+  padding-top: 100px;
   position: absolute;
   color: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
 }
@@ -632,6 +627,53 @@ ul {
   }
   .carousel-content {
     padding-top: 0;
+  }
+  .carousel-height {
+    height: 50vh;
+  }
+}
+.carousel-title {
+  color: rgb(103, 210, 255);
+  letter-spacing: 0.25em;
+  font-size: 2em;
+  font-weight: 800;
+  text-shadow: -1px -1px 0 rgb(13, 120, 165), 0 -1px 0 rgb(13, 120, 165), 1px -1px 0 rgb(13, 120, 165), 1px 0 0 rgb(13, 120, 165), 1px 1px 0 rgb(13, 120, 165), 0 1px 0 rgb(13, 120, 165), -1px 1px 0 rgb(13, 120, 165), -1px 0 0 rgb(13, 120, 165);
+}
+
+.carousel-content-container.right {
+  align-items: flex-end;
+  text-align: end;
+}
+
+.carousel-content-container.left {
+  align-items: flex-start;
+  text-align: start;
+}
+
+.carousel-content-container.center {
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-content-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.carousel-content-container * {
+  font-family: "Montserrat", sans-serif;
+}
+.carousel-content-container h3 {
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 736px) {
+  .carousel-title {
+    padding-top: 10vh;
+  }
+  .carousel-content-container {
+    align-items: center !important;
+    text-align: center !important;
   }
 }
 
