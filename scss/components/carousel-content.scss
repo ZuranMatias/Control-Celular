@@ -37,6 +37,14 @@
 }
 
 @media screen and (max-width: 736px) { 
-    .carousel-title { padding-top: 10vh; } 
-    .carousel-content-container {align-items: center !important; text-align: center !important;}
+    .carousel-title { padding-top: 8vh; font-size: 1.3em;} 
+    .carousel-content-container {
+        align-items: center !important; 
+        text-align: center !important;
+    
+        & h3{
+            font-size: 1em;
+        }
+    }
+
 }

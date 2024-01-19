@@ -714,11 +714,15 @@ ul {
 
 @media screen and (max-width: 736px) {
   .carousel-title {
-    padding-top: 10vh;
+    padding-top: 8vh;
+    font-size: 1.3em;
   }
   .carousel-content-container {
     align-items: center !important;
     text-align: center !important;
+  }
+  .carousel-content-container h3 {
+    font-size: 1em;
   }
 }
 
