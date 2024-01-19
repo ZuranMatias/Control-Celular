@@ -6,7 +6,7 @@ function CarouselContent({children, height, backgroundNumber}) {
   return (
     <div style={{ height: height }}>
         <div className='carousel-content'> {children} </div>
-        <div className="carousel-background" style={{backgroundImage: `url(../../public/Images/carousel${backgroundNumber}.png)` }}/>
+        <div className="carousel-background" style={{backgroundImage: `url(../../Images/carousel${backgroundNumber}.png)` }}/>
       </div>
   )
 }
