@@ -9,9 +9,9 @@ function HeaderCarousel({ height, upperMargin }) {
   }
   return (
     <Carousel showThumbs={false} infiniteLoop={true} emulateTouch={true} showStatus={false} >
-      <CarouselContent height={height}> <p>primer slide de contenido</p> </CarouselContent>
-      <CarouselContent height={height}> <p>segundo slide de contenido</p> </CarouselContent>
-      <CarouselContent height={height}> <p>tercer slide de contenido</p> </CarouselContent>
+      <CarouselContent height={height} backgroundNumber={1}> <p>primer slide de contenido</p> </CarouselContent>
+      <CarouselContent height={height} backgroundNumber={2}> <p>segundo slide de contenido</p> </CarouselContent>
+      <CarouselContent height={height} backgroundNumber={3}> <p>tercer slide de contenido</p> </CarouselContent>
     </Carousel>
   )
 }
