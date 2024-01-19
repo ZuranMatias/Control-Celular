@@ -2,23 +2,20 @@ import React from 'react'
 import Navbar from './navbar/navbar/navbar'
 
 import { useInView } from 'react-intersection-observer'
-import { useEffect } from 'react'
+
+import HeaderCarousel from './carousel/carousel'
 
 function Header() {
   const { ref, inView } = useInView({ threshold: 1 })
 
-  useEffect(() => {
-    console.log('Am I in view:', inView)
-  }, [inView])
+  const height = "80vh"
+  const upperMargin = "10vh"
 
   return (
     <div style={{}}>
-      <div className="header">
+      <div className="header" style={{height:height}}>
         <div ref={ref}> <Navbar isVisible={inView} /> </div>
-        <div className="content" style={{ paddingTop: '10vh' }}>
-          <img src="./home_picture_desktop.png" alt="" />
-        </div>
-        <div className="background" />
+          {<HeaderCarousel height={height} upperMargin={upperMargin}/>}
       </div>
     </div>
   )

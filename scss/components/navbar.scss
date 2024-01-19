@@ -5,14 +5,12 @@
     width: 100%;
     text-align: center;
     transition: $transition-speed;
-    z-index: 2;
+    z-index: 3;
 
     & ul {
       transition: $transition-speed;
       white-space: nowrap;
       display: inline-block;
-      border-radius: 0.35em;
-      box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
 
       & li {
         display: inline-block;
@@ -21,7 +19,7 @@
 
         & a,
         span {
-          color: rgba(255, 255, 255, 0.75);
+          color: rgba(255, 255, 255);
           text-transform: uppercase;
           text-decoration: none;
           font-size: 0.7em;
@@ -29,6 +27,10 @@
           height: 5em;
           line-height: 5em;
           outline: 0;
+          transition: $transition-speed;
+          &:hover {
+            color: $navbar-text-hover;
+          }
         }
       }
     }
@@ -36,11 +38,31 @@
 
   #nav.sticky {
     position: fixed;
+
+    & ul {
+      width: 100%;
+      backdrop-filter: blur(10px);
+
+      background-color: $navbar-sticky-color;
+      &:hover {
+        background-color: $navbar-sticky-color-hover;
+      }
+      & li a {
+        z-index: 3;
+      }
+    }
+  }
+
+  //Animacion original
+  #nav.sticky2 {
+    position: fixed;
     transform: translateY(10vh);
 
     & ul {
       width: 775px;
       backdrop-filter: blur(10px);
+      border-radius: 0.35em;
+      box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
 
       background-color: $navbar-sticky-color;
       &:hover {
@@ -67,7 +89,6 @@
       }
 
       & li a {
-        color: rgba(255, 255, 255, 1);
         text-transform: uppercase;
         text-decoration: none;
         //font-size: 0.8em;

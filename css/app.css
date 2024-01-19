@@ -156,14 +156,12 @@ ul {
     width: 100%;
     text-align: center;
     transition: all 0.5s ease-out;
-    z-index: 2;
+    z-index: 3;
   }
   #nav ul {
     transition: all 0.5s ease-out;
     white-space: nowrap;
     display: inline-block;
-    border-radius: 0.35em;
-    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
   }
   #nav ul li {
     display: inline-block;
@@ -172,7 +170,7 @@ ul {
   }
   #nav ul li a,
   #nav ul li span {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     text-decoration: none;
     font-size: 0.7em;
@@ -180,20 +178,41 @@ ul {
     height: 5em;
     line-height: 5em;
     outline: 0;
+    transition: all 0.5s ease-out;
+  }
+  #nav ul li a:hover,
+  #nav ul li span:hover {
+    color: orange;
   }
   #nav.sticky {
     position: fixed;
-    transform: translateY(10vh);
   }
   #nav.sticky ul {
-    width: 775px;
+    width: 100%;
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.6);
   }
   #nav.sticky ul:hover {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.85);
   }
   #nav.sticky ul li a {
+    z-index: 3;
+  }
+  #nav.sticky2 {
+    position: fixed;
+    transform: translateY(10vh);
+  }
+  #nav.sticky2 ul {
+    width: 775px;
+    backdrop-filter: blur(10px);
+    border-radius: 0.35em;
+    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  #nav.sticky2 ul:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+  #nav.sticky2 ul li a {
     z-index: 3;
   }
   #nav.static {
@@ -210,7 +229,6 @@ ul {
     background-color: rgb(40, 40, 80);
   }
   #nav.static ul li a {
-    color: rgb(255, 255, 255);
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.25em;
@@ -224,11 +242,19 @@ ul {
     display: none;
   }
 }
-.header {
-  height: 90vh;
+.header .background {
+  background-size: cover;
+  background-image: url("../../public/Images/teen2.png");
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  transform: scale(1.1);
+  filter: blur(5px) brightness(0.7);
+  top: 0;
 }
 
-.header .background {
+.background {
   background-size: cover;
   background-image: url("../../public/Images/teen2.png");
   z-index: -1;
@@ -495,10 +521,10 @@ ul {
   background-color: rgb(24, 27, 30);
   color: white;
   display: none;
-  z-index: 1;
+  z-index: 5;
 }
 
-.sidebar-toggle {
+.sidebar-toggle-sticky {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -509,10 +535,41 @@ ul {
   height: 38px;
   width: 54px;
   z-index: 1;
+  backdrop-filter: blur(10px);
   background-color: rgba(92, 95, 103, 0.5);
 }
-.sidebar-toggle img {
+.sidebar-toggle-sticky img {
   filter: invert(100%) sepia(53%) saturate(1%) hue-rotate(298deg) brightness(107%) contrast(101%);
+}
+
+.sidebar-toggle-static {
+  position: fixed;
+  right: 1rem;
+  top: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  height: 38px;
+  width: 54px;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  background-color: rgba(92, 95, 103, 0.5);
+}
+.sidebar-toggle-static img {
+  filter: invert(100%) sepia(53%) saturate(1%) hue-rotate(298deg) brightness(107%) contrast(101%);
+}
+
+.sidebar-toggle-container {
+  top: 0;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 50px !important;
+  height: auto;
+  z-index: 4;
+  display: none;
+  margin-bottom: 50px;
 }
 
 .content {
@@ -533,6 +590,9 @@ ul {
   .sidebar {
     display: block;
   }
+  .sidebar-toggle-container {
+    display: block;
+  }
 }
 .sidebar-link {
   display: block;
@@ -547,6 +607,31 @@ ul {
   border-top-style: solid;
   border-top-color: rgba(255, 255, 255, 0.05);
   margin: 0 15px 0 15px;
+}
+
+.control-dots {
+  text-align: start !important;
+}
+
+.carousel-content {
+  padding-top: 72.18px;
+  position: absolute;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 736px) {
+  .control-arrow {
+    display: none;
+  }
+  .carousel-content {
+    padding-top: 0;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
