@@ -1,1 +1,9 @@
 $transition-speed: all 0.5s ease-out;
+
+.desktop-only {
+    @media screen and (max-width: 736px) { display: none !important; }
+}
+
+.mobile-only {
+    @media screen and (min-width: 737px) { display: none !important; }
+}

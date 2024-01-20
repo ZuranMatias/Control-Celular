@@ -1,15 +1,62 @@
+.carousel-content-container {
+    display: flex;
+    flex-direction: row;
+
+    width: 80%;
+
+    & *{ font-family: 'Montserrat', sans-serif; }
+
+    & h3{ font-size: 1.5em; }
+
+    @media screen and (max-width: 736px) { 
+        align-items: center !important; 
+        text-align: center !important;
+
+        width: 90%;
+        flex-direction: column;
+    }
+}
+
 .carousel-title {
     color: $title-blue;
     letter-spacing: 0.25em;
-    font-size: 2em;
+    font-size: xx-large;
     font-weight: 800;
 
+    text-transform: uppercase;
+
     @include stroke($title-blue-dark);
+
+    @media screen and (max-width: 736px) { 
+        padding-top: 8vh; 
+        font-size: x-large;
+        letter-spacing: 0em;
+        //text-align: justify;
+    }
 }
 
-.carousel-content-container.right{
-    align-items: flex-end;
-    text-align: end;
+.carousel-subtitle{
+    text-align: center;
+}
+
+.carousel-text{
+    margin-top: 2vh;
+    font-size: large;
+}
+
+.carousel-text-container{
+    max-width: 60%;
+
+    @media screen and (max-width: 736px){
+        max-width: 100%;
+        align-items: center;
+    }
+}
+
+//Directions
+.carousel-content-container.evenly-spaced{
+    justify-content: space-evenly;
+    text-align: start;
 }
 
 .carousel-content-container.left{
@@ -20,31 +67,4 @@
 .carousel-content-container.center{
     align-items: center;
     text-align: center;
-}
-
-.carousel-content-container {
-    display: flex;
-    flex-direction: column;
-
-    width: 80%;
-
-    & *{ 
-        font-family: 'Montserrat', sans-serif; 
-    }
-    & h3{
-        font-size: 1.5em;
-    }
-}
-
-@media screen and (max-width: 736px) { 
-    .carousel-title { padding-top: 8vh; font-size: 1.3em;} 
-    .carousel-content-container {
-        align-items: center !important; 
-        text-align: center !important;
-    
-        & h3{
-            font-size: 1em;
-        }
-    }
-
 }

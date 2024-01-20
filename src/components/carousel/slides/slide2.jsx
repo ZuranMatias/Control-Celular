@@ -2,7 +2,7 @@ import React from 'react'
 
 function Slide2() {
   return (
-    <div className="carousel-content-container right">
+    <div className="carousel-content-container evenly-spaced text-center">
       <div>
         <h2 className="carousel-title"> PROTECCIÓN SILENCIOSA </h2>
         <h3 style={{ marginTop: '1rem' }}>

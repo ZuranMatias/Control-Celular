@@ -8,6 +8,7 @@
 
 .carousel-content {
   padding-top: 100px;
+  padding-bottom: 100px;
   position: absolute;
   color: white;
   display: flex;
@@ -37,7 +38,7 @@
     padding-top: 0;
   }
   .carousel-height {
-    height: 50vh;
+    height: 90vh;
   }
 }
 
