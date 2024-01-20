@@ -15,15 +15,16 @@ function Slide1() {
         <div>
         <h2 className="carousel-title" {...aosOptions.fadeUp}> La aplicación definitiva para monitorear dispositivos móviles </h2>
         <p className='carousel-text' {...aosOptions.fadeUpDelay}>¡Adquiera acceso a distancia a toda la información y acciones en cualquier teléfono!</p>
+        <img className='mobile-only' src='./logo_hq.png' style={{height: "20vh", width: "auto", marginBottom: "10vh"}} {...aosOptions.fadeUpXXDelay}/>
         </div>
+        
+
         <div className='d-flex align-items-center' {...aosOptions.fadeUpXXDelay}>
         <Button variant="primary" className="btn-primary" style={{fontSize: "larger"}}>¡Probar Ahora!</Button>
-        <a href="" style={{marginLeft: "1vw", fontSize: "medium", textDecoration: "none"}}>Demostración</a>
+        <a href="" style={{marginLeft: "1vw", fontSize: "medium", textDecoration: "none", color: "#34d8eb"}}>Demostración</a>
         </div>
       </div>
 
-      <div style={{minWidth: "30vw"}} className='mobile-only'>
-      </div>
     </div>
   )
 }

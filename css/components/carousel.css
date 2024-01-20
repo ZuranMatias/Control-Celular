@@ -30,6 +30,14 @@
   top: 0;
 }
 
+.dark-blur {
+  filter: blur(5px) brightness(0.7);
+}
+
+.bright-blur {
+  filter: blur(5px) brightness(1);
+}
+
 @media screen and (max-width: 736px) {
   .control-arrow {
     display: none;

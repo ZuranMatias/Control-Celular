@@ -19,9 +19,9 @@ function HeaderCarousel({ height, upperMargin }) {
         preventMovementUntilSwipeScrollTolerance={true}
         swipeScrollTolerance={30}
       >
-        <CarouselContent height={height} backgroundNumber={1}> <Slide1 /></CarouselContent>
+        <CarouselContent height={height} backgroundNumber={5}> <Slide1 /></CarouselContent>
         <CarouselContent height={height} backgroundNumber={4}> <Slide2 /></CarouselContent>
-        <CarouselContent height={height} backgroundNumber={3}> <Slide3 /></CarouselContent>
+        <CarouselContent height={height} backgroundNumber={1}> <Slide3 /></CarouselContent>
       </Carousel>
     </div>
   )
