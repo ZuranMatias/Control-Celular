@@ -32,6 +32,8 @@
 
     text-align: center;
     text-transform: uppercase;
+    text-wrap: nowrap;
+
     top: -46.8px; //Check it out
     background: $bgColor url("./overlay.png") repeat scroll 0% 0% / auto padding-box border-box; //Important
 
@@ -40,11 +42,12 @@
     width: 360px;
     padding: 7.2px;
 
+
     //Important stuff
 
     @include apply-shadow-title;
 
-    @media screen and (max-width: 736px) { max-width: 60vw; }
+    @media screen and (max-width: 736px) { max-width: 70vw; }
 }
 
 @mixin divider-content($bgColor: rgb(58, 197, 255)) {

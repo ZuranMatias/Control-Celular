@@ -44,6 +44,7 @@ ul {
   position: absolute;
   text-align: center;
   text-transform: uppercase;
+  text-wrap: nowrap;
   top: -46.8px;
   background: rgb(58, 197, 255) url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
   font: 700 14.4px/46.8px "Source Sans Pro", sans-serif;
@@ -83,7 +84,7 @@ ul {
 }
 @media screen and (max-width: 736px) {
   .wrapper .title {
-    max-width: 60vw;
+    max-width: 70vw;
   }
 }
 
@@ -106,6 +107,7 @@ ul {
   position: absolute;
   text-align: center;
   text-transform: uppercase;
+  text-wrap: nowrap;
   top: -46.8px;
   background: #CCE7FD url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
   font: 700 14.4px/46.8px "Source Sans Pro", sans-serif;
@@ -145,7 +147,7 @@ ul {
 }
 @media screen and (max-width: 736px) {
   .wrapper.light-blue .title {
-    max-width: 60vw;
+    max-width: 70vw;
   }
 }
 .wrapper.light-blue .title {
@@ -170,6 +172,7 @@ ul {
   position: absolute;
   text-align: center;
   text-transform: uppercase;
+  text-wrap: nowrap;
   top: -46.8px;
   background: rgb(255, 0, 0) url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
   font: 700 14.4px/46.8px "Source Sans Pro", sans-serif;
@@ -209,7 +212,7 @@ ul {
 }
 @media screen and (max-width: 736px) {
   .wrapper.red .title {
-    max-width: 60vw;
+    max-width: 70vw;
   }
 }
 
@@ -231,6 +234,7 @@ ul {
   position: absolute;
   text-align: center;
   text-transform: uppercase;
+  text-wrap: nowrap;
   top: -46.8px;
   background: rgb(40, 40, 40) url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
   font: 700 14.4px/46.8px "Source Sans Pro", sans-serif;
@@ -270,7 +274,7 @@ ul {
 }
 @media screen and (max-width: 736px) {
   .wrapper.black .title {
-    max-width: 60vw;
+    max-width: 70vw;
   }
 }
 
