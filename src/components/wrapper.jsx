@@ -1,17 +1,13 @@
 import React from 'react'
 
-function Wrapper({ color, children, title }) {
+function Wrapper({ color, children, title, mobileTitle }) {
   if (!title) {title = "Title"}
+  if (!mobileTitle) {mobileTitle = title}
   return (
     <div className={`wrapper ${color}`}>
-      <div className={`title ${color}`}>{title}</div>
-      <div style={{ maxWidth: '80%' }}>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
-          quibusdam blanditiis minima at atque ipsa earum, placeat eius ex cum!
-          Modi, fugiat odit impedit laudantium repellendus obcaecati aperiam ad
-          quibusdam!
-        </p>
+      <div className={`title ${color} desktop-only`}>{title}</div>
+      <div className={`title ${color} mobile-only`}>{mobileTitle}</div>
+      <div style={{ width: '80%' }}>
         {children}
       </div>
     </div>

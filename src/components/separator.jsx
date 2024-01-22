@@ -11,7 +11,7 @@ function Separator({color, children, shadowOpacity}) {
   return (
     <>
       <div className={classes}>
-        <div class="semicircle" style={{background: color}}/>
+        <div className="semicircle" style={{background: color}}/>
       </div>
       <div></div>
       <div className={classes}>

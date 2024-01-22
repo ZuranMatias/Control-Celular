@@ -4,7 +4,7 @@
 @import "./basics/colors.scss";
 @import "./basics/fonts.scss";
 @import "./basics/mixins.scss";
-
+@import "./basics/row-column.scss";
 
 //Components
     //Component Mixins
@@ -12,6 +12,7 @@
     @import "./components/dividers/container.scss";
     @import "./components/icon-button.scss";
 
+@import "./components/text.scss";
 @import "./components/scrollbar.scss";
 @import "./components/dividers/semicircle.scss";
 @import "./components/navbar.scss";

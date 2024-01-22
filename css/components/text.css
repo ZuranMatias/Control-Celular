@@ -1,0 +1,17 @@
+.section-subtitle {
+  color: orange;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.section-paragraph {
+  max-width: 30%;
+  text-align: center;
+}
+@media screen and (max-width: 736px) {
+  .section-paragraph {
+    max-width: 80%;
+  }
+}
+
+/*# sourceMappingURL=text.css.map */

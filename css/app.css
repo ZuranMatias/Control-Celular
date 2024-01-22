@@ -26,6 +26,29 @@ ul {
   font-weight: normal;
   font-style: normal;
 }
+.row-column {
+  display: flex;
+}
+@media screen and (min-width: 737px) {
+  .row-column {
+    flex-direction: row;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+  }
+}
+@media screen and (max-width: 736px) {
+  .row-column {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+  }
+}
+
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -35,7 +58,7 @@ ul {
   width: 100%;
   background: rgb(58, 197, 255) url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
   font: 16px/24px "Source Sans Pro", sans-serif;
-  padding: 50px 0px 112px;
+  padding: 50px 0px 0px;
   bottom: 0;
 }
 .wrapper .title {
@@ -97,7 +120,7 @@ ul {
   width: 100%;
   background: #CCE7FD url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
   font: 16px/24px "Source Sans Pro", sans-serif;
-  padding: 50px 0px 112px;
+  padding: 50px 0px 0px;
   bottom: 0;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -163,7 +186,7 @@ ul {
   width: 100%;
   background: rgb(255, 0, 0) url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
   font: 16px/24px "Source Sans Pro", sans-serif;
-  padding: 50px 0px 112px;
+  padding: 50px 0px 0px;
   bottom: 0;
 }
 .wrapper.red .title {
@@ -225,7 +248,7 @@ ul {
   width: 100%;
   background: rgb(40, 40, 40) url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
   font: 16px/24px "Source Sans Pro", sans-serif;
-  padding: 50px 0px 112px;
+  padding: 50px 0px 0px;
   bottom: 0;
 }
 .wrapper.black .title {
@@ -353,6 +376,22 @@ ul {
 }
 .icon-button.blue .text-container {
   background: #1e9ff2;
+}
+
+.section-subtitle {
+  color: orange;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.section-paragraph {
+  max-width: 30%;
+  text-align: center;
+}
+@media screen and (max-width: 736px) {
+  .section-paragraph {
+    max-width: 80%;
+  }
 }
 
 /* width */

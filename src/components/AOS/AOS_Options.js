@@ -27,6 +27,10 @@ const aosOptions = {
     'data-aos-duration': '1000',
     'data-aos-delay':"1000"
   },
+  fadeDown: {
+    'data-aos': 'fade-down',
+    'data-aos-duration': '1000',
+  },
   // Add more options as needed
 }
 
