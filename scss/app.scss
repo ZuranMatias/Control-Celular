@@ -5,14 +5,14 @@
 @import "./basics/fonts.scss";
 @import "./basics/mixins.scss";
 
+
 //Components
     //Component Mixins
     @import "./components/dividers/mixins.scss";
-    @import "./components/dividers/titles.scss";
     @import "./components/dividers/container.scss";
     @import "./components/icon-button.scss";
 
-
+@import "./components/scrollbar.scss";
 @import "./components/dividers/semicircle.scss";
 @import "./components/navbar.scss";
 @import "./components/header.scss";

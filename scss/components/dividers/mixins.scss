@@ -58,4 +58,8 @@
     font: 16px / 24px "Source Sans Pro", sans-serif;
     padding: 50px 0px 112px;
     bottom: 0;
+
+    & .title {
+        @include divider-title($bgColor)
+    }
 }

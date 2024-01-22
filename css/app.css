@@ -26,6 +26,18 @@ ul {
   font-weight: normal;
   font-style: normal;
 }
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  position: relative;
+  width: 100%;
+  background: rgb(58, 197, 255) url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
+  font: 16px/24px "Source Sans Pro", sans-serif;
+  padding: 50px 0px 112px;
+  bottom: 0;
+}
 .wrapper .title {
   color: rgb(255, 255, 255);
   letter-spacing: 3.6px;
@@ -75,115 +87,69 @@ ul {
   }
 }
 
-.wrapper .title.red {
-  color: rgb(255, 255, 255);
-  letter-spacing: 3.6px;
-  position: absolute;
-  text-align: center;
-  text-transform: uppercase;
-  top: -46.8px;
-  background: rgb(255, 0, 0) url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
-  font: 700 14.4px/46.8px "Source Sans Pro", sans-serif;
-  width: 360px;
-  padding: 7.2px;
-}
-.wrapper .title.red:after {
-  content: "";
-  display: block;
-  height: 38px;
-  position: absolute;
-  right: -35px;
-  top: 46.8px;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-  width: 35px;
-  background: rgba(0, 0, 0, 0) url("./shadow.png") repeat scroll 0% 0%/auto padding-box border-box;
-}
-@media screen and (max-width: 736px) {
-  .wrapper .title.red:after {
-    display: none;
-  }
-}
-.wrapper .title.red:before {
-  content: "";
-  display: block;
-  height: 38px;
-  left: -35px;
-  position: absolute;
-  top: 46.8px;
-  width: 35px;
-  background: rgba(0, 0, 0, 0) url("./shadow.png") repeat scroll 0% 0%/auto padding-box border-box;
-}
-@media screen and (max-width: 736px) {
-  .wrapper .title.red:before {
-    display: none;
-  }
-}
-@media screen and (max-width: 736px) {
-  .wrapper .title.red {
-    max-width: 60vw;
-  }
-}
-
-.wrapper .title.black {
-  color: rgb(255, 255, 255);
-  letter-spacing: 3.6px;
-  position: absolute;
-  text-align: center;
-  text-transform: uppercase;
-  top: -46.8px;
-  background: rgb(40, 40, 40) url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
-  font: 700 14.4px/46.8px "Source Sans Pro", sans-serif;
-  width: 360px;
-  padding: 7.2px;
-}
-.wrapper .title.black:after {
-  content: "";
-  display: block;
-  height: 38px;
-  position: absolute;
-  right: -35px;
-  top: 46.8px;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-  width: 35px;
-  background: rgba(0, 0, 0, 0) url("./shadow.png") repeat scroll 0% 0%/auto padding-box border-box;
-}
-@media screen and (max-width: 736px) {
-  .wrapper .title.black:after {
-    display: none;
-  }
-}
-.wrapper .title.black:before {
-  content: "";
-  display: block;
-  height: 38px;
-  left: -35px;
-  position: absolute;
-  top: 46.8px;
-  width: 35px;
-  background: rgba(0, 0, 0, 0) url("./shadow.png") repeat scroll 0% 0%/auto padding-box border-box;
-}
-@media screen and (max-width: 736px) {
-  .wrapper .title.black:before {
-    display: none;
-  }
-}
-@media screen and (max-width: 736px) {
-  .wrapper .title.black {
-    max-width: 60vw;
-  }
-}
-
-.wrapper {
+.wrapper.light-blue {
   display: flex;
   flex-direction: row;
   justify-content: center;
   color: rgb(255, 255, 255);
   position: relative;
   width: 100%;
-  background: rgb(58, 197, 255) url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
+  background: #CCE7FD url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
   font: 16px/24px "Source Sans Pro", sans-serif;
   padding: 50px 0px 112px;
   bottom: 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+.wrapper.light-blue .title {
+  color: rgb(255, 255, 255);
+  letter-spacing: 3.6px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: -46.8px;
+  background: #CCE7FD url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
+  font: 700 14.4px/46.8px "Source Sans Pro", sans-serif;
+  width: 360px;
+  padding: 7.2px;
+}
+.wrapper.light-blue .title:after {
+  content: "";
+  display: block;
+  height: 38px;
+  position: absolute;
+  right: -35px;
+  top: 46.8px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  width: 35px;
+  background: rgba(0, 0, 0, 0) url("./shadow.png") repeat scroll 0% 0%/auto padding-box border-box;
+}
+@media screen and (max-width: 736px) {
+  .wrapper.light-blue .title:after {
+    display: none;
+  }
+}
+.wrapper.light-blue .title:before {
+  content: "";
+  display: block;
+  height: 38px;
+  left: -35px;
+  position: absolute;
+  top: 46.8px;
+  width: 35px;
+  background: rgba(0, 0, 0, 0) url("./shadow.png") repeat scroll 0% 0%/auto padding-box border-box;
+}
+@media screen and (max-width: 736px) {
+  .wrapper.light-blue .title:before {
+    display: none;
+  }
+}
+@media screen and (max-width: 736px) {
+  .wrapper.light-blue .title {
+    max-width: 60vw;
+  }
+}
+.wrapper.light-blue .title {
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .wrapper.red {
@@ -198,6 +164,54 @@ ul {
   padding: 50px 0px 112px;
   bottom: 0;
 }
+.wrapper.red .title {
+  color: rgb(255, 255, 255);
+  letter-spacing: 3.6px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: -46.8px;
+  background: rgb(255, 0, 0) url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
+  font: 700 14.4px/46.8px "Source Sans Pro", sans-serif;
+  width: 360px;
+  padding: 7.2px;
+}
+.wrapper.red .title:after {
+  content: "";
+  display: block;
+  height: 38px;
+  position: absolute;
+  right: -35px;
+  top: 46.8px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  width: 35px;
+  background: rgba(0, 0, 0, 0) url("./shadow.png") repeat scroll 0% 0%/auto padding-box border-box;
+}
+@media screen and (max-width: 736px) {
+  .wrapper.red .title:after {
+    display: none;
+  }
+}
+.wrapper.red .title:before {
+  content: "";
+  display: block;
+  height: 38px;
+  left: -35px;
+  position: absolute;
+  top: 46.8px;
+  width: 35px;
+  background: rgba(0, 0, 0, 0) url("./shadow.png") repeat scroll 0% 0%/auto padding-box border-box;
+}
+@media screen and (max-width: 736px) {
+  .wrapper.red .title:before {
+    display: none;
+  }
+}
+@media screen and (max-width: 736px) {
+  .wrapper.red .title {
+    max-width: 60vw;
+  }
+}
 
 .wrapper.black {
   display: flex;
@@ -211,16 +225,70 @@ ul {
   padding: 50px 0px 112px;
   bottom: 0;
 }
+.wrapper.black .title {
+  color: rgb(255, 255, 255);
+  letter-spacing: 3.6px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: -46.8px;
+  background: rgb(40, 40, 40) url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
+  font: 700 14.4px/46.8px "Source Sans Pro", sans-serif;
+  width: 360px;
+  padding: 7.2px;
+}
+.wrapper.black .title:after {
+  content: "";
+  display: block;
+  height: 38px;
+  position: absolute;
+  right: -35px;
+  top: 46.8px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  width: 35px;
+  background: rgba(0, 0, 0, 0) url("./shadow.png") repeat scroll 0% 0%/auto padding-box border-box;
+}
+@media screen and (max-width: 736px) {
+  .wrapper.black .title:after {
+    display: none;
+  }
+}
+.wrapper.black .title:before {
+  content: "";
+  display: block;
+  height: 38px;
+  left: -35px;
+  position: absolute;
+  top: 46.8px;
+  width: 35px;
+  background: rgba(0, 0, 0, 0) url("./shadow.png") repeat scroll 0% 0%/auto padding-box border-box;
+}
+@media screen and (max-width: 736px) {
+  .wrapper.black .title:before {
+    display: none;
+  }
+}
+@media screen and (max-width: 736px) {
+  .wrapper.black .title {
+    max-width: 60vw;
+  }
+}
 
 .blank-container {
   width: 100%;
   display: flex;
   flex-direction: row;
+  padding: 0 10% 5% 10%;
   align-items: center;
   justify-content: center;
 }
 .blank-container h1 {
   margin: 5vh;
+}
+@media screen and (max-width: 736px) {
+  .blank-container {
+    padding: 0 10% 12% 10%;
+  }
 }
 
 .icon-button .icon-container {
@@ -281,6 +349,30 @@ ul {
 }
 .icon-button.blue .text-container {
   background: #1e9ff2;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border: rgba(128, 128, 128, 0.4) 1px solid;
+  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+  transition: 0.5s ease-in-out;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+  transition: 0.5s ease-in-out;
 }
 
 .semicircle {
