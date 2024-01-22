@@ -1,0 +1,16 @@
+.semicircle {
+  position: absolute;
+  content: "";
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: white;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.semicircle-shadow {
+  box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+}
+
+/*# sourceMappingURL=semicircle.css.map */

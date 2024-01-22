@@ -1,12 +1,15 @@
 $red: rgb(255,0,0);
 $black: rgb(40,40,40);
 
+$navbar-text-static: black;
+$navbar-text-sticky: white;
+
 $navbar-text-hover: orange;
 
-$navbar-static-color: rgba(10,10,50,1);
-$navbar-static-color-hover: rgba(40,40,80,1);
+$navbar-static-color: rgba(255,255,255,0.6);
+$navbar-static-color-hover: rgba(255,255,255,1);
 
-$navbar-sticky-color: rgba(0,0,0, 0.6);
+$navbar-sticky-color: rgba(0,0,0, 0.4);
 $navbar-sticky-color-hover: rgba(0,0,0,0.85);
 
 $black-transparent: rgba(92, 95, 103, 0.5);

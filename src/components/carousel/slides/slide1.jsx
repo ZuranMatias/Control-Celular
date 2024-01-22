@@ -15,6 +15,7 @@ function Slide1() {
         <div>
         <h2 className="carousel-title" {...aosOptions.fadeUp}> La aplicación definitiva para monitorear dispositivos móviles </h2>
         <p className='carousel-text' {...aosOptions.fadeUpDelay}>¡Adquiera acceso a distancia a toda la información y acciones en cualquier teléfono!</p>
+        <h1 {...aosOptions.fadeUpXXDelay}>Control Parental</h1>
         <img className='mobile-only' src='./logo_hq.png' style={{height: "20vh", width: "auto", marginBottom: "10vh"}} {...aosOptions.fadeUpXXDelay}/>
         </div>
         
