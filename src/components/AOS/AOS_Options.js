@@ -22,6 +22,11 @@ const aosOptions = {
     'data-aos': 'fade-right',
     'data-aos-duration': '1000',
   },
+  fadeRightDelay: {
+    'data-aos': 'fade-right',
+    'data-aos-duration': '1000',
+    'data-aos-delay':"300"
+  },
   fadeRightXDelay: {
     'data-aos': 'fade-right',
     'data-aos-duration': '1000',

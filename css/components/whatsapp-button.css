@@ -5,6 +5,12 @@
   position: fixed;
   right: 20px;
   bottom: 20px;
+  transition: 0.5s ease-in-out;
+  /* 
+    & :hover{
+      width: 110px;
+      height: 110px;
+    } */
 }
 @media screen and (max-width: 736px) {
   .whatsapp-api-button {

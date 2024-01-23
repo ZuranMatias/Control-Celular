@@ -56,6 +56,16 @@ function Home() {
               dispositivo.
             </TitledParagraph>
           </div>
+          {/* <div className='row-column desktop-only'>
+            <img className='divider-bottom-image' src='./Images/Home/hand-holding-phone.png' {...aosOptions.fadeRight}/>
+            <img className='divider-bottom-image' src='./Images/Home/phone-gps.png' {...aosOptions.fadeRightDelay}/>
+            <img className='divider-bottom-image' src='./Images/Home/hacker.png' {...aosOptions.fadeRightXDelay}/>
+          </div> */}
+          <div className='row-column desktop-only'>
+            <img className='divider-bottom-image-framed' src='./Images/Home/phone-chatting.png' {...aosOptions.fadeRight}/>
+            <img className='divider-bottom-image-framed' src='./Images/Home/gps-map.png' {...aosOptions.fadeRightDelay}/>
+            <img className='divider-bottom-image-framed' src='./Images/Home/hacker-framed.png' {...aosOptions.fadeRightXDelay}/>
+          </div>
         </Wrapper>
       </section>
 

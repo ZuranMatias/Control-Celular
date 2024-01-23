@@ -63,4 +63,29 @@
 
     @include bottom-shadow;
     & .title { @include divider-title($bgColor) }
+
+    & .divider-bottom-image {
+        @media screen and (max-width: 736px) { max-width: 70vw; }
+
+        //Desktop
+        @media screen and (min-width: 737px) { 
+            height: 30vh;
+            bottom: 0px;
+            z-index: 2;
+        }
+    }
+
+    & .divider-bottom-image-framed {
+        @media screen and (max-width: 736px) { max-width: 70vw; }
+
+        //Desktop
+        @media screen and (min-width: 737px) { 
+            height: 25vh;
+            width: 35vh;
+            z-index: 2;
+            margin-bottom: 5vh;
+            border: 10px solid white;
+            box-shadow: 5px 5px 2px -2px rgba($color: #000000, $alpha: 0.3);
+        }
+    }
 }
