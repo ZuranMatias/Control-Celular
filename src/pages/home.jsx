@@ -16,10 +16,13 @@ const contactIcon = "./icons/desconocido.png"
 function Home() {
   return (
     <>
+      {/* Header */}
       <section>
         <Header />
       </section>
       <Separator color={'rgb(255,255,255)'} />
+
+      {/* Introductory Information */}
       <section {...aosOptions.fadeUp}>
         <div className="blank-container d-flex flex-column">
           <h1>Control Celular</h1>
@@ -32,6 +35,7 @@ function Home() {
         </div>
       </section>
 
+      {/* Protection Section */}
       <section {...aosOptions.fadeDown}>
         <Wrapper color={'light-blue'} title={'¿Cómo puede proteger?'} mobileTitle={'¿Protección?'} >
           <div className="row-column">
@@ -54,8 +58,18 @@ function Home() {
         </Wrapper>
       </section>
 
-      {/* <section {...aosOptions.fadeUp}> <Wrapper color={"red"} title={"el control parental"}> </Wrapper> </section> */}
-      {/* <section {...aosOptions.fadeUp}> <Wrapper color={"black"} title={"el control parental"}> </Wrapper> </section> */}
+      {/* Introductory Information */}
+      <section {...aosOptions.fadeUp}>
+        <div className="blank-container d-flex flex-column">
+          <h1>Control Celular</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus mollitia quod, deserunt, totam quis maxime possimus at
+            amet, commodi doloribus dicta velit sequi? Harum corporis minus fuga
+            repellat dolore molestias!
+          </p>
+        </div>
+      </section>
     </>
   )
 }

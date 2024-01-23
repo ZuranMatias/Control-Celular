@@ -1,16 +1,17 @@
-.semicircle {
-  position: absolute;
-  content: "";
-  left: 50%;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: white;
-  transform: translateX(-50%) translateY(-50%);
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 11 | .semicircle-shadow { @include bottom-shadow; }
+ *    |                      ^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   scss\components\dividers\semicircle.scss 11:22  root stylesheet */
 
-.semicircle-shadow {
-  box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 11 \2502  .semicircle-shadow { @include bottom-shadow; }\d\a    \2502                       ^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\components\\dividers\\semicircle.scss 11:22  root stylesheet";
 }
-
-/*# sourceMappingURL=semicircle.css.map */

@@ -56,9 +56,9 @@ ul {
   position: relative;
   width: 100%;
   background: rgb(58, 197, 255) url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
-  font: 16px/24px "Source Sans Pro", sans-serif;
   padding: 50px 0px 0px;
   bottom: 0;
+  box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.5);
 }
 .wrapper .title {
   color: rgb(255, 255, 255);
@@ -118,9 +118,9 @@ ul {
   position: relative;
   width: 100%;
   background: #CCE7FD url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
-  font: 16px/24px "Source Sans Pro", sans-serif;
   padding: 50px 0px 0px;
   bottom: 0;
+  box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.5);
   color: rgba(0, 0, 0, 0.8);
 }
 .wrapper.light-blue .title {
@@ -184,9 +184,9 @@ ul {
   position: relative;
   width: 100%;
   background: rgb(255, 0, 0) url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
-  font: 16px/24px "Source Sans Pro", sans-serif;
   padding: 50px 0px 0px;
   bottom: 0;
+  box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.5);
 }
 .wrapper.red .title {
   color: rgb(255, 255, 255);
@@ -246,9 +246,9 @@ ul {
   position: relative;
   width: 100%;
   background: rgb(40, 40, 40) url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
-  font: 16px/24px "Source Sans Pro", sans-serif;
   padding: 50px 0px 0px;
   bottom: 0;
+  box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.5);
 }
 .wrapper.black .title {
   color: rgb(255, 255, 255);
@@ -426,7 +426,6 @@ ul {
 
 .semicircle {
   position: absolute;
-  content: "";
   left: 50%;
   width: 100px;
   height: 100px;
