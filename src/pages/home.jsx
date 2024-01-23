@@ -23,10 +23,11 @@ function Home() {
       </section>
       <Separator color={'rgb(255,255,255)'} />
 
-      {/* Introductory Information */}
+      {/* Instructions Information */}
       <section {...aosOptions.fadeUp}>
         <div className="blank-container d-flex flex-column">
           <h1>Control Celular</h1>
+          <h2>¡Control Completo en 3 Pasos!</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptatibus mollitia quod, deserunt, totam quis maxime possimus at

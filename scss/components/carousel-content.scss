@@ -20,12 +20,14 @@
 .carousel-title {
     color: $title-blue;
     letter-spacing: 0.25em;
-    font-size: xx-large;
-    font-weight: 800;
+    //font-size: xx-large;
+    //font-weight: 800;
 
-    text-transform: uppercase;
+    //text-transform: uppercase;
 
-    @include stroke($title-blue-dark);
+    //@include stroke($title-blue-dark);
+
+    text-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.5);
 
     @media screen and (max-width: 736px) { 
         padding-top: 8vh; 
