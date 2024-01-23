@@ -5,14 +5,14 @@ import Wrapper from '../components/wrapper'
 import Separator from '../components/separator'
 import TitledParagraph from '../components/titled_paragraph'
 import WhatsappStickyButton from '../components/buttons/whatsappStickyButton'
+import CircleIconButton from '../components/buttons/circleIconButton'
 
 import aosOptions from '../components/AOS/AOS_Options'
 
-
 //SRC Icons
-const mapIcon = "./icons/alfiler.png"
-const minorIcon = "./icons/no-menores.png"
-const contactIcon = "./icons/desconocido.png"
+const mapIcon = './icons/alfiler.png'
+const minorIcon = './icons/no-menores.png'
+const contactIcon = './icons/desconocido.png'
 
 function Home() {
   return (
@@ -26,20 +26,29 @@ function Home() {
       {/* Instructions Information */}
       <section {...aosOptions.fadeUp}>
         <div className="blank-container d-flex flex-column">
-          <h1>Control Celular</h1>
-          <h2>¡Control Completo en 3 Pasos!</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus mollitia quod, deserunt, totam quis maxime possimus at
-            amet, commodi doloribus dicta velit sequi? Harum corporis minus fuga
-            repellat dolore molestias!
-          </p>
+          <h1>¡Control Completo en 3 Pasos!</h1>
+          <div className='row-column'>
+          <CircleIconButton 
+          imgName={"download"} 
+          caption={"1. Instale el software en el dispositivo o compre uno con el programa ya instalado."}/>
+          <CircleIconButton 
+          imgName={"regalo"} 
+          caption={"2. Entregue el celular a la persona correspondiente."}/>
+          <CircleIconButton 
+          imgName={"lupa"} 
+          caption={"3. ¡Listo! Ahora ya puede monitorear el celular en nuestra app."}/>
+          </div>
+          
         </div>
       </section>
 
       {/* Protection Section */}
       <section {...aosOptions.fadeDown}>
-        <Wrapper color={'light-blue'} title={'¿Cómo puede proteger?'} mobileTitle={'¿Protección?'} >
+        <Wrapper
+          color={'light-blue'}
+          title={'¿Cómo puede proteger?'}
+          mobileTitle={'¿Protección?'}
+        >
           <div className="row-column">
             <TitledParagraph title={'Mensajes Explícitos'} iconSrc={minorIcon}>
               Garantiza la privacidad de tus seres queridos con nuestra
@@ -51,7 +60,10 @@ function Home() {
               rastreo GPS en tiempo real, brindándote tranquilidad al conocer su
               paradero constante.
             </TitledParagraph>
-            <TitledParagraph title={'Contactos Sospechosos'} iconSrc={contactIcon}>
+            <TitledParagraph
+              title={'Contactos Sospechosos'}
+              iconSrc={contactIcon}
+            >
               Protege a tus seres queridos sabiendo exactamente a quién le habla
               y cuánto a través de la función de detección de contactos en el
               dispositivo.
@@ -62,10 +74,22 @@ function Home() {
             <img className='divider-bottom-image' src='./Images/Home/phone-gps.png' {...aosOptions.fadeRightDelay}/>
             <img className='divider-bottom-image' src='./Images/Home/hacker.png' {...aosOptions.fadeRightXDelay}/>
           </div> */}
-          <div className='row-column desktop-only'>
-            <img className='divider-bottom-image-framed' src='./Images/Home/phone-chatting.png' {...aosOptions.fadeRight}/>
-            <img className='divider-bottom-image-framed' src='./Images/Home/gps-map.png' {...aosOptions.fadeRightDelay}/>
-            <img className='divider-bottom-image-framed' src='./Images/Home/hacker-framed.png' {...aosOptions.fadeRightXDelay}/>
+          <div className="row-column desktop-only">
+            <img
+              className="divider-bottom-image-framed"
+              src="./Images/Home/phone-chatting.png"
+              {...aosOptions.fadeRight}
+            />
+            <img
+              className="divider-bottom-image-framed"
+              src="./Images/Home/gps-map.png"
+              {...aosOptions.fadeRightDelay}
+            />
+            <img
+              className="divider-bottom-image-framed"
+              src="./Images/Home/hacker-framed.png"
+              {...aosOptions.fadeRightXDelay}
+            />
           </div>
         </Wrapper>
       </section>
@@ -83,7 +107,7 @@ function Home() {
         </div>
       </section>
 
-      <WhatsappStickyButton/>
+      <WhatsappStickyButton />
     </>
   )
 }
