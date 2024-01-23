@@ -3,10 +3,11 @@ import React from 'react'
 import Header from '../components/header'
 import Wrapper from '../components/wrapper'
 import Separator from '../components/separator'
+import TitledParagraph from '../components/titled_paragraph'
+import WhatsappStickyButton from '../components/buttons/whatsappStickyButton'
 
 import aosOptions from '../components/AOS/AOS_Options'
 
-import TitledParagraph from '../components/titled_paragraph'
 
 //SRC Icons
 const mapIcon = "./icons/alfiler.png"
@@ -70,6 +71,8 @@ function Home() {
           </p>
         </div>
       </section>
+
+      <WhatsappStickyButton/>
     </>
   )
 }

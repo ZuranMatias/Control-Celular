@@ -377,6 +377,23 @@ ul {
   background: #1e9ff2;
 }
 
+.whatsapp-api-button {
+  width: 100px;
+  height: 100px;
+  z-index: 999;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+@media screen and (max-width: 736px) {
+  .whatsapp-api-button {
+    right: 12px;
+    bottom: 14px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
 .section-subtitle {
   color: orange;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);

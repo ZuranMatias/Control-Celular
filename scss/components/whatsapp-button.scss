@@ -1,0 +1,17 @@
+.whatsapp-api-button {
+  width: 100px;
+  height: 100px;
+  z-index: 999;
+
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  @media screen and (max-width: 736px) {
+    right: 12px;
+    bottom: 14px;
+
+    width: 70px;
+    height: 70px;
+  }
+}
