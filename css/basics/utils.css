@@ -10,4 +10,26 @@
   }
 }
 
+.row-column {
+  display: flex;
+}
+@media screen and (min-width: 737px) {
+  .row-column {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: stretch;
+  }
+}
+@media screen and (max-width: 736px) {
+  .row-column {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+  }
+}
+
 /*# sourceMappingURL=utils.css.map */
