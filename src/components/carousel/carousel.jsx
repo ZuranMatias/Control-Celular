@@ -19,7 +19,8 @@ function HeaderCarousel({ height, upperMargin }) {
         preventMovementUntilSwipeScrollTolerance={true}
         swipeScrollTolerance={30}
         autoPlay={true}
-        interval={6000}
+        interval={5000}
+        stopOnHover={false}
       >
         <CarouselContent height={height} backgroundNumber={5}> <Slide1 /></CarouselContent>
         <CarouselContent height={height} backgroundNumber={4}> <Slide2 /></CarouselContent>

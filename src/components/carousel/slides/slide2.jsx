@@ -20,7 +20,9 @@ function Slide2() {
         <IconButton type={"location"} style={{ marginBottom: '1rem' }}> Ubicación </IconButton>
         <IconButton type={"sound"} style={{ marginBottom: '1rem' }}>Micrófono en Vivo</IconButton>
         <IconButton type={"camera"} style={{ marginBottom: '1rem' }} > Tomar Una Foto </IconButton>
-        <IconButton type={"recording"} style={{ marginBottom: '0rem' }} > Grabar Un Video </IconButton>
+        <div className="desktop-only">
+        <IconButton type={"recording"} style={{ marginBottom: '0rem' }}> Grabar Un Video </IconButton>
+        </div>
       </div>
     </div>
   )
