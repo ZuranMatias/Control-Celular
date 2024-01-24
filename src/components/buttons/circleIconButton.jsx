@@ -1,11 +1,11 @@
 import React from 'react'
 
-function CircleIconButton({ children, imgName, caption }) {
+function CircleIconButton({ children, imgName, caption, style }) {
   return (
     <>
-      <div style={{maxWidth: "30%"}} className="d-flex flex-column align-items-center">
-        <h5 style={{textAlign: "center", alignSelf: "start"}}>{caption}</h5>
-        <div className="icon-container-circle">
+      <div className="icon-container-parent" style={style}>
+        <h5 style={{textAlign: "center", marginBottom: "5vh"}}>{caption}</h5>
+        <div className="icon-container-circle" style={{marginBottom: "10vh"}}>
           <div className="icon-container-filled-circle">
             <img src={`./icons/${imgName}.png`} />
           </div>

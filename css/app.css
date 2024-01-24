@@ -18,7 +18,6 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    align-items: flex-start;
     align-content: stretch;
   }
 }
@@ -484,6 +483,22 @@ ul {
 }
 .icon-button.blue .text-container {
   background: #1e9ff2;
+}
+
+.icon-container-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between !important;
+  max-width: 20vw;
+  transform: scale(0.9);
+  text-align: center;
+}
+@media screen and (max-width: 736px) {
+  .icon-container-parent h5 {
+    width: 80vw;
+    text-align: center;
+  }
 }
 
 .icon-container-circle {

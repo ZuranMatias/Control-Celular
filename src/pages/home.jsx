@@ -26,17 +26,11 @@ function Home() {
       {/* Instructions Information */}
       <section {...aosOptions.fadeUp}>
         <div className="blank-container d-flex flex-column">
-          <h1>¡Control Completo en 3 Pasos!</h1>
+          <h1 style={{textAlign: "center"}}>¡Control Completo en 3 Pasos!</h1>
           <div className='row-column'>
-          <CircleIconButton 
-          imgName={"download"} 
-          caption={"1. Instale el software en el dispositivo o compre uno con el programa ya instalado."}/>
-          <CircleIconButton 
-          imgName={"regalo"} 
-          caption={"2. Entregue el celular a la persona correspondiente."}/>
-          <CircleIconButton 
-          imgName={"lupa"} 
-          caption={"3. ¡Listo! Ahora ya puede monitorear el celular en nuestra app."}/>
+          <CircleIconButton imgName={"download"} caption={"1. Instale el software en el dispositivo o compre uno con el programa ya instalado."}/>
+          <CircleIconButton style={{marginLeft: "2vw", marginRight: "2vw"}} imgName={"regalo"} caption={"2. Entregue el celular a la persona correspondiente."}/>
+          <CircleIconButton imgName={"lupa"} caption={"3. ¡Listo! Ahora ya puede monitorear el celular en nuestra app."}/>
           </div>
           
         </div>
