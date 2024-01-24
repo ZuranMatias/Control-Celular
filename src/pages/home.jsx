@@ -1,6 +1,8 @@
 import React from 'react'
 
 import Header from '../components/header'
+import Footer from '../components/footer'
+
 import Wrapper from '../components/wrapper'
 import Separator from '../components/separator'
 import TitledParagraph from '../components/titled_paragraph'
@@ -24,7 +26,7 @@ function Home() {
       <Separator id="headerSeparator" scrollTargetId={"instructionsSection"} color={'rgb(255,255,255)'} />
 
       {/* Instructions Information */}
-      <div id='instructionsSection' class="position-relative top-0 start-50 translate-middle-x mb-3" />
+      <div id='instructionsSection' className="position-relative top-0 start-50 translate-middle-x mb-3" />
       <section {...aosOptions.fadeUp}>
         <div className="blank-container d-flex flex-column">
           <h1 style={{textAlign: "center"}}>¡Control Completo en 3 Pasos!</h1>
@@ -73,7 +75,7 @@ function Home() {
         </Wrapper>
       </section>
 
-      {/* Introductory Information */}
+      {/* Bottom Information */}
       <section {...aosOptions.fadeUp}>
         <div className="blank-container d-flex flex-column">
           <h1>Control Celular</h1>
@@ -85,6 +87,8 @@ function Home() {
           </p>
         </div>
       </section>
+
+      <Footer/>
 
       <WhatsappStickyButton />
     </>
