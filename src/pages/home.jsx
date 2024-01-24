@@ -33,24 +33,27 @@ function Home() {
         id="openingSection"
         className="position-relative top-0 start-50 translate-middle-x mb-3"
       />
-      <section {...aosOptions.fadeUp}>
-        <div className="blank-container d-flex flex-column">
-          <h1 {...aosOptions.fadeUp}>Control Celular</h1>
-          <p {...aosOptions.fadeUpDelay} style={{ textAlign: 'center' }}>
-            Nuestro Software está diseñado para realizar el monitoreo de
-            celulares con distintos fines tales como la seguridad y el control
-            parental.
-            <span className="desktop-only">
-              Esto es posible gracias a que permite grabar y hacer copias de
-              toda la información que genere un dispositivo.
-            </span>
-            <span className="mobile-only">
-              <br />
-              <br />
-            </span>
-            En esta página, te contamos acerca de nuestro servicio para que
-            puedas, entre otras cosas, monitorear Whatsapp en celulares.
-          </p>
+      <section {...aosOptions.fadeUp} className='d-flex justify-content-center'>
+        <div className="row-column" style={{maxWidth: "80%", justifyContent: "center", alignItems: "center"}}>
+          <div style={{ textAlign: 'center' }}>
+            <h1 className='title' {...aosOptions.fadeUp}>Control Celular</h1>
+            <p {...aosOptions.fadeUpXDelay} style={{ textAlign: 'center' }}>
+              Nuestro Software está diseñado para realizar el monitoreo de
+              celulares con distintos fines tales como la seguridad y el control
+              parental.
+              <span className="desktop-only">
+                Esto es posible gracias a que permite grabar y hacer copias de
+                toda la información que genere un dispositivo.
+              </span>
+              <span className="mobile-only">
+                <br />
+                <br />
+              </span>
+              En esta página, te contamos acerca de nuestro servicio para que
+              puedas, entre otras cosas, monitorear Whatsapp en celulares.
+            </p>
+          </div>
+            <img src="./Images/Home/hand-holding-phone.png" alt="Mano Usando una App" className='responsive-picture' />
         </div>
       </section>
 

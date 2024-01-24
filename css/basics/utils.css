@@ -31,4 +31,22 @@
   }
 }
 
+.responsive-picture {
+  bottom: 0px;
+  opacity: 0.5;
+}
+.responsive-picture:hover {
+  opacity: 1;
+}
+@media screen and (min-width: 737px) {
+  .responsive-picture {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 736px) {
+  .responsive-picture {
+    height: 40vh;
+  }
+}
+
 /*# sourceMappingURL=utils.css.map */

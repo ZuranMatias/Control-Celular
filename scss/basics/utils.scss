@@ -26,3 +26,20 @@ $transition-speed: all 0.5s ease-out;
       align-content: stretch;
     }
   }
+
+  .responsive-picture {
+    bottom: 0px; 
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    @media screen and (min-width: 737px) {
+      width: 30vw; 
+    }
+
+    @media screen and (max-width: 736px) {
+      height: 40vh; 
+    }
+  }

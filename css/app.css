@@ -31,6 +31,24 @@
   }
 }
 
+.responsive-picture {
+  bottom: 0px;
+  opacity: 0.5;
+}
+.responsive-picture:hover {
+  opacity: 1;
+}
+@media screen and (min-width: 737px) {
+  .responsive-picture {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 736px) {
+  .responsive-picture {
+    height: 40vh;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -659,6 +677,10 @@ ul {
   height: 40px;
   margin-bottom: 1vw;
   z-index: 3;
+}
+
+.title {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 /* width */
