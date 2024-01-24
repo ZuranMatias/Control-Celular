@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Header from '../components/header'
-import Footer from '../components/footer'
 
 import Wrapper from '../components/wrapper'
 import Separator from '../components/separator'
@@ -23,25 +22,45 @@ function Home() {
       <section>
         <Header />
       </section>
-      <Separator id="headerSeparator" scrollTargetId={"instructionsSection"} color={'rgb(255,255,255)'} />
+      <Separator
+        id="headerSeparator"
+        scrollTargetId={'openingSection'}
+        color={'rgb(255,255,255)'}
+      />
 
-      {/* Instructions Information */}
-      <div id='instructionsSection' className="position-relative top-0 start-50 translate-middle-x mb-3" />
+      {/* Introductory Information */}
+      <div
+        id="openingSection"
+        className="position-relative top-0 start-50 translate-middle-x mb-3"
+      />
       <section {...aosOptions.fadeUp}>
         <div className="blank-container d-flex flex-column">
-          <h1 style={{textAlign: "center"}}>¡Control Completo en 3 Pasos!</h1>
-          <div className='row-column'>
-          <CircleIconButton imgName={"download"} caption={"1. Instale el software en el dispositivo o compre uno con el programa ya instalado."}/>
-          <CircleIconButton style={{marginLeft: "2vw", marginRight: "2vw"}} imgName={"regalo"} caption={"2. Entregue el celular a la persona correspondiente."}/>
-          <CircleIconButton imgName={"lupa"} caption={"3. ¡Listo! Ahora ya puede monitorear el celular en nuestra app."}/>
-          </div>
-          
+          <h1 {...aosOptions.fadeUp}>Control Celular</h1>
+          <p {...aosOptions.fadeUpDelay} style={{ textAlign: 'center' }}>
+            Nuestro Software está diseñado para realizar el monitoreo de
+            celulares con distintos fines tales como la seguridad y el control
+            parental.
+            <span className="desktop-only">
+              Esto es posible gracias a que permite grabar y hacer copias de
+              toda la información que genere un dispositivo.
+            </span>
+            <span className="mobile-only">
+              <br />
+              <br />
+            </span>
+            En esta página, te contamos acerca de nuestro servicio para que
+            puedas, entre otras cosas, monitorear Whatsapp en celulares.
+          </p>
         </div>
       </section>
 
       {/* Protection Section */}
       <section /* {...aosOptions.fadeDown} */>
-        <Wrapper color={'light-blue'} title={'¿Cómo puede proteger?'} mobileTitle={'¿Protección?'} >
+        <Wrapper
+          color={'light-blue'}
+          title={'¿Cómo puede proteger?'}
+          mobileTitle={'¿Protección?'}
+        >
           <div className="row-column">
             <TitledParagraph title={'Mensajes Explícitos'} iconSrc={minorIcon}>
               Garantiza la privacidad de tus seres queridos con nuestra
@@ -68,27 +87,55 @@ function Home() {
             <img className='divider-bottom-image' src='./Images/Home/hacker.png' {...aosOptions.fadeRightXDelay}/>
           </div> */}
           <div className="row-column desktop-only">
-            <img className="divider-bottom-image-framed" src="./Images/Home/phone-chatting.png" {...aosOptions.fadeRight} />
-            <img className="divider-bottom-image-framed" src="./Images/Home/gps-map.png" {...aosOptions.fadeRightDelay} />
-            <img className="divider-bottom-image-framed" src="./Images/Home/hacker-framed.png" {...aosOptions.fadeRightXDelay} />
+            <img
+              className="divider-bottom-image-framed"
+              src="./Images/Home/phone-chatting.png"
+              {...aosOptions.fadeRight}
+            />
+            <img
+              className="divider-bottom-image-framed"
+              src="./Images/Home/gps-map.png"
+              {...aosOptions.fadeRightDelay}
+            />
+            <img
+              className="divider-bottom-image-framed"
+              src="./Images/Home/hacker-framed.png"
+              {...aosOptions.fadeRightXDelay}
+            />
           </div>
         </Wrapper>
       </section>
 
-      {/* Bottom Information */}
+      {/* Instructions Information */}
       <section {...aosOptions.fadeUp}>
         <div className="blank-container d-flex flex-column">
-          <h1>Control Celular</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus mollitia quod, deserunt, totam quis maxime possimus at
-            amet, commodi doloribus dicta velit sequi? Harum corporis minus fuga
-            repellat dolore molestias!
-          </p>
+          <h1 style={{ textAlign: 'center' }} {...aosOptions.fadeUp}>
+            ¡Control Completo en 3 Pasos!
+          </h1>
+          <div className="row-column">
+            <CircleIconButton
+              {...aosOptions.fadeUp}
+              imgName={'download'}
+              caption={
+                '1. Instale el software en el dispositivo o compre uno con el programa ya instalado.'
+              }
+            />
+            <CircleIconButton
+              {...aosOptions.fadeUp}
+              style={{ marginLeft: '2vw', marginRight: '2vw' }}
+              imgName={'regalo'}
+              caption={'2. Entregue el celular a la persona correspondiente.'}
+            />
+            <CircleIconButton
+              {...aosOptions.fadeUp}
+              imgName={'lupa'}
+              caption={
+                '3. ¡Listo! Ahora ya puede monitorear el celular en nuestra app.'
+              }
+            />
+          </div>
         </div>
       </section>
-
-      <Footer/>
 
       <WhatsappStickyButton />
     </>

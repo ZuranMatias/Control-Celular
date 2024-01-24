@@ -1,10 +1,13 @@
 import React from 'react'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+
 function Slide4() {
   return (
     <div className="carousel-content-container evenly-spaced text-left d-flex align-items-center justify-content-center">
       <div>
-        <h2 className="carousel-title" style={{textAlign: 'center'}}> <strong> APLICACIÓN COMPLETAMENTE INVISIBLE </strong></h2>
+        <h2 className="carousel-title" style={{textAlign: 'center'}}> <strong> APLICACIÓN COMPLETAMENTE INVISIBLE <FontAwesomeIcon icon={faUserSecret} /> </strong></h2>
         <h3 style={{ marginTop: '1rem', textAlign: 'center'}}>
           SEA SU ÁNGEL GUARDIAN CUIDÁNDOLOS DESDE SU PROPIO CELULAR
           <hr style={{ width: '100%', margin: '1vh'}} />

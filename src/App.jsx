@@ -3,7 +3,9 @@ import { BrowserRouter } from 'react-router-dom'
 
 //Components
 import PageRoutes from './pages/routes'
+
 import NavbarContainer from './components/navbar/navbar_container'
+import Footer from './components/footer'
 
 //Hooks
 import AOSInitializer from './components/AOS/AOS_Initializer'
@@ -21,6 +23,7 @@ function App() {
         <NavbarContainer />
         <PageRoutes />
       </BrowserRouter>
+      <Footer/>
     </>
   )
 }
