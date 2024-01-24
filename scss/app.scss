@@ -5,6 +5,9 @@
 @import "./basics/fonts.scss";
 @import "./basics/mixins.scss";
 
+//Animations
+@import "./animations/bobbing.scss";
+
 //Components
     //Component Mixins
     @import "./components/dividers/mixins.scss";

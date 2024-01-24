@@ -21,9 +21,10 @@ function Home() {
       <section>
         <Header />
       </section>
-      <Separator color={'rgb(255,255,255)'} />
+      <Separator id="headerSeparator" scrollTargetId={"instructionsSection"} color={'rgb(255,255,255)'} />
 
       {/* Instructions Information */}
+      <div id='instructionsSection' class="position-relative top-0 start-50 translate-middle-x mb-3" />
       <section {...aosOptions.fadeUp}>
         <div className="blank-container d-flex flex-column">
           <h1 style={{textAlign: "center"}}>¡Control Completo en 3 Pasos!</h1>
@@ -37,12 +38,8 @@ function Home() {
       </section>
 
       {/* Protection Section */}
-      <section {...aosOptions.fadeDown}>
-        <Wrapper
-          color={'light-blue'}
-          title={'¿Cómo puede proteger?'}
-          mobileTitle={'¿Protección?'}
-        >
+      <section /* {...aosOptions.fadeDown} */>
+        <Wrapper color={'light-blue'} title={'¿Cómo puede proteger?'} mobileTitle={'¿Protección?'} >
           <div className="row-column">
             <TitledParagraph title={'Mensajes Explícitos'} iconSrc={minorIcon}>
               Garantiza la privacidad de tus seres queridos con nuestra
@@ -69,21 +66,9 @@ function Home() {
             <img className='divider-bottom-image' src='./Images/Home/hacker.png' {...aosOptions.fadeRightXDelay}/>
           </div> */}
           <div className="row-column desktop-only">
-            <img
-              className="divider-bottom-image-framed"
-              src="./Images/Home/phone-chatting.png"
-              {...aosOptions.fadeRight}
-            />
-            <img
-              className="divider-bottom-image-framed"
-              src="./Images/Home/gps-map.png"
-              {...aosOptions.fadeRightDelay}
-            />
-            <img
-              className="divider-bottom-image-framed"
-              src="./Images/Home/hacker-framed.png"
-              {...aosOptions.fadeRightXDelay}
-            />
+            <img className="divider-bottom-image-framed" src="./Images/Home/phone-chatting.png" {...aosOptions.fadeRight} />
+            <img className="divider-bottom-image-framed" src="./Images/Home/gps-map.png" {...aosOptions.fadeRightDelay} />
+            <img className="divider-bottom-image-framed" src="./Images/Home/hacker-framed.png" {...aosOptions.fadeRightXDelay} />
           </div>
         </Wrapper>
       </section>

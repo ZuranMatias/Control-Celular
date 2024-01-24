@@ -6,6 +6,37 @@
   border-radius: 50%;
   background: white;
   transform: translateX(-50%) translateY(-50%);
+  z-index: 2;
 }
 
 .semicircle-shadow { @include bottom-shadow; }
+
+#scrollButton{
+  z-index: 3;
+  width: 70%;
+  height: 70%;
+  //background-color: red;
+  border-radius: 50%;
+  border: 3px solid $icon-border-color-hover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    border: 3px solid white;
+  }
+
+  & img{
+    width: 70%;
+    height: 70%;
+    filter: invert(33%) sepia(72%) saturate(1670%) hue-rotate(159deg) brightness(100%) contrast(102%);
+
+    animation: bobbing 1s infinite alternate;
+
+    &:hover {
+      width: 80%;
+      height: 80%;
+    }
+  }
+}
