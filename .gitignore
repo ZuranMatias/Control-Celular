@@ -12,9 +12,6 @@ dist
 dist-ssr
 *.local
 
-.public/Images/Contact
-Contact
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

@@ -591,6 +591,7 @@ ul {
   text-align: center;
   color: white;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+  transition: ease-in-out 1s;
   font-size: 7vw;
 }
 .header-contact h1:hover {
