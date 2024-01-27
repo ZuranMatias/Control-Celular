@@ -4,7 +4,7 @@
   margin: 20px;
 }
 .contact-button:hover {
-  animation: bobbing 1s infinite alternate;
+  animation: bobbing 0.5s infinite alternate;
 }
 
 .contact-button-icon {

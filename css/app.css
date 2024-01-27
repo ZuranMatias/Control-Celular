@@ -579,7 +579,7 @@ ul {
 }
 
 .header-contact-image {
-  background-image: linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.3)), url("../../../public/Images/Contact/phone2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.3)), url("../../../public/Images/teen2.png");
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -591,11 +591,10 @@ ul {
   text-align: center;
   color: white;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
-  transition: ease-in-out 1s;
   font-size: 7vw;
 }
 .header-contact h1:hover {
-  font-size: 8.5vw;
+  color: antiquewhite;
 }
 @media screen and (max-width: 736px) {
   .header-contact h1 {
@@ -621,7 +620,7 @@ ul {
   margin: 20px;
 }
 .contact-button:hover {
-  animation: bobbing 1s infinite alternate;
+  animation: bobbing 0.5s infinite alternate;
 }
 
 .contact-button-icon {

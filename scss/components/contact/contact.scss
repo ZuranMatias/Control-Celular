@@ -1,4 +1,4 @@
-$header-contact-image-url: "../../../public/Images/Contact/phone2.jpg";
+$header-contact-image-url: "../../../public/Images/teen2.png";
 $header-contact-image-tint: rgba(0,0,255,0.3);
 
 $body-contact-image-url: "../../../public/Images/Contact/contacto.jpg";
@@ -24,10 +24,10 @@ $body-contact-image-tint: rgba(gray,0.5);
         color: white;
         text-shadow: 2px 2px 3px rgba($color: #000000, $alpha: 0.9);
 
-        transition: ease-in-out 1s;
-
         font-size: 7vw;
-        &:hover{ font-size: 8.5vw; }
+        
+        &:hover{ color: antiquewhite; }
+
         @media screen and (max-width: 736px) {
             font-size: 20vw;
             &:hover{ font-size: 21vw; }
