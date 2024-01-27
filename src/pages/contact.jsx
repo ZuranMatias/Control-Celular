@@ -44,7 +44,7 @@ function Contacto() {
           <div {...aosOptions.fadeUp}><WhatsappAPIButton /></div>
           <div {...aosOptions.fadeUp}><GmailApiButton /></div>
         </div>
-        <VerticalLine/>
+        <VerticalLine className={"desktop-only"}/>
         <section>
           <Form action="https://formsubmit.co/zuranmatias@gmail.com" method="POST" target="hiddenFrame" onSubmit={submitted}>
 

@@ -14,10 +14,10 @@ const CSS = {
   marginRight: "5vw",
 }
 
-function VerticalLine() {
+function VerticalLine({className}) {
   return (
     <>
-      <div style={{ ...CSS}} {...aosOptions.fadeDown}></div>
+      <div style={{ ...CSS}} {...aosOptions.fadeDown} className={className}></div>
     </>
   )
 }
