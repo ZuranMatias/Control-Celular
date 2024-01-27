@@ -1,0 +1,27 @@
+@keyframes fading-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fading-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.animation-fading-in-absolute {
+  animation: fading-in 3s infinite alternate;
+  position: absolute;
+}
+
+.animation-fading-out-absolute {
+  animation: fading-out 3s infinite alternate;
+  position: absolute;
+}
+
+/*# sourceMappingURL=fading.css.map */

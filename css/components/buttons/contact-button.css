@@ -1,0 +1,24 @@
+.contact-button {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 20px;
+}
+.contact-button:hover {
+  animation: bobbing 1s infinite alternate;
+}
+
+.contact-button-icon {
+  border-radius: 10px 0px 0px 10px !important;
+  border: none !important;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.contact-button-text {
+  border-radius: 0px 10px 10px 0px !important;
+  border: none !important;
+  width: 9rem;
+  height: 3.5rem;
+}
+
+/*# sourceMappingURL=contact-button.css.map */

@@ -17,7 +17,6 @@ function Footer() {
       <div className="footer" style={{ maxWidth: '100vw' }}>
         <div className="footer-icons-container">
           <div className="d-flex flex-row justify-content-around mb-3">
-            <FontAwesomeIcon icon={faFacebook} />
             <FontAwesomeIcon icon={faWhatsapp} />
             <FontAwesomeIcon icon={faEnvelope} />
           </div>

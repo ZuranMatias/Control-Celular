@@ -49,6 +49,41 @@
   }
 }
 
+.bob-on-hover:hover {
+  animation: bobbing 0.5s infinite alternate;
+}
+
+.change-on-hover .primary {
+  display: block;
+}
+.change-on-hover .secondary {
+  display: none;
+}
+.change-on-hover:hover .primary {
+  display: none;
+}
+.change-on-hover:hover .secondary {
+  display: block;
+}
+
+@media screen and (min-width: 737px) {
+  .responsive-padding {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 2%;
+    padding-bottom: 10%;
+  }
+}
+@media screen and (max-width: 736px) {
+  .responsive-padding {
+    padding: 10%;
+  }
+}
+
+.grey-on-hover:hover {
+  color: grey;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -140,6 +175,32 @@ ul {
     transform: translateY(-5px);
   }
 }
+@keyframes fading-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fading-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.animation-fading-in-absolute {
+  animation: fading-in 3s infinite alternate;
+  position: absolute;
+}
+
+.animation-fading-out-absolute {
+  animation: fading-out 3s infinite alternate;
+  position: absolute;
+}
+
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -517,6 +578,88 @@ ul {
   }
 }
 
+.header-contact-image {
+  background-image: linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.3)), url("../../../public/Images/Contact/phone2.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.85) blur(2px);
+}
+
+.header-contact h1 {
+  position: absolute;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+  font-size: 7vw;
+}
+.header-contact h1:hover {
+  font-size: 8.5vw;
+}
+@media screen and (max-width: 736px) {
+  .header-contact h1 {
+    font-size: 20vw;
+  }
+  .header-contact h1:hover {
+    font-size: 21vw;
+  }
+}
+
+.contact-body {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.contact-body * {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.contact-button {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 20px;
+}
+.contact-button:hover {
+  animation: bobbing 1s infinite alternate;
+}
+
+.contact-button-icon {
+  border-radius: 10px 0px 0px 10px !important;
+  border: none !important;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.contact-button-text {
+  border-radius: 0px 10px 10px 0px !important;
+  border: none !important;
+  width: 9rem;
+  height: 3.5rem;
+}
+
+.whatsapp-api-button {
+  width: 100px;
+  height: 100px;
+  z-index: 999;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  transition: 0.5s ease-in-out;
+  /* 
+    & :hover{
+      width: 110px;
+      height: 110px;
+    } */
+}
+@media screen and (max-width: 736px) {
+  .whatsapp-api-button {
+    right: 12px;
+    bottom: 14px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
 .icon-button .icon-container {
   inline-size: 5.25rem;
   padding: 1rem;
@@ -630,29 +773,6 @@ ul {
   height: 10vh;
 }
 
-.whatsapp-api-button {
-  width: 100px;
-  height: 100px;
-  z-index: 999;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  transition: 0.5s ease-in-out;
-  /* 
-    & :hover{
-      width: 110px;
-      height: 110px;
-    } */
-}
-@media screen and (max-width: 736px) {
-  .whatsapp-api-button {
-    right: 12px;
-    bottom: 14px;
-    width: 70px;
-    height: 70px;
-  }
-}
-
 .section-subtitle {
   color: orange;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
@@ -739,7 +859,7 @@ ul {
   width: 70%;
   height: 70%;
   filter: invert(33%) sepia(72%) saturate(1670%) hue-rotate(159deg) brightness(100%) contrast(102%);
-  animation: bobbing 1s infinite alternate;
+  animation: bobbing 0.5s infinite alternate;
 }
 #scrollButton img:hover {
   width: 80%;

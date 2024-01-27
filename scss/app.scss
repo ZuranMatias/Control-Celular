@@ -8,15 +8,22 @@
 
 //Animations
 @import "./animations/bobbing.scss";
+@import "./animations/fading.scss";
 
 //Components
     //Component Mixins
     @import "./components/dividers/mixins.scss";
     @import "./components/dividers/container.scss";
-    @import "./components/icon-button.scss";
+
+    //Contact
+    @import "./components/contact/contact.scss";
+
+    //Buttons
+    @import "./components/buttons/contact-button.scss";
+    @import "./components/buttons/whatsapp-button.scss";
+    @import "./components/buttons/icon-button.scss";
 
 @import "./components/icon-containers.scss";
-@import "./components/whatsapp-button.scss";
 @import "./components/text.scss";
 @import "./components/scrollbar.scss";
 @import "./components/dividers/semicircle.scss";

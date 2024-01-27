@@ -49,4 +49,39 @@
   }
 }
 
+.bob-on-hover:hover {
+  animation: bobbing 0.5s infinite alternate;
+}
+
+.change-on-hover .primary {
+  display: block;
+}
+.change-on-hover .secondary {
+  display: none;
+}
+.change-on-hover:hover .primary {
+  display: none;
+}
+.change-on-hover:hover .secondary {
+  display: block;
+}
+
+@media screen and (min-width: 737px) {
+  .responsive-padding {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 2%;
+    padding-bottom: 10%;
+  }
+}
+@media screen and (max-width: 736px) {
+  .responsive-padding {
+    padding: 10%;
+  }
+}
+
+.grey-on-hover:hover {
+  color: grey;
+}
+
 /*# sourceMappingURL=utils.css.map */

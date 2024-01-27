@@ -6,11 +6,11 @@ function Navbar({isVisible}) {
   return (
     <nav id="nav" className={position}>
       <ul>
-      <NavbarLink>Inicio</NavbarLink>
+      <NavbarLink address={"/"}>Inicio</NavbarLink>
       <NavbarLink>Control Parental</NavbarLink>
       <NavbarLink>Seguridad Personal</NavbarLink>
       <NavbarLink>Faq</NavbarLink>
-      <NavbarLink>Contacto</NavbarLink>
+      <NavbarLink address={"/contacto"}>Contacto</NavbarLink>
       </ul>
     </nav>
   );

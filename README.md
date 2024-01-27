@@ -1,1 +1,1 @@
-Deploy: https://dynamic-arithmetic-74117c.netlify.app/
+https://zuranmatias.github.io/Control-Celular/

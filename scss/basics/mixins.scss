@@ -11,3 +11,13 @@
   }
 
   @mixin bottom-shadow() { box-shadow: 0 20px 20px -20px rgba($color: #000000, $alpha: 0.5); }
+
+  @mixin background-tint($tint_color, $image_url) {
+    background-image: 
+      linear-gradient( $tint_color, $tint_color ),
+      url( $image_url )
+  }
+
+  @mixin standard-text-shadow() {
+    text-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.3);
+  }

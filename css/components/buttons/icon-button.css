@@ -1,0 +1,61 @@
+.icon-button .icon-container {
+  inline-size: 5.25rem;
+  padding: 1rem;
+  border-radius: 0.30625rem 0 0 0.30625rem;
+  display: flex;
+  align-items: center;
+}
+.icon-button .icon-container img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(177deg) brightness(104%) contrast(102%);
+  width: 3rem;
+  height: 3rem;
+}
+@media screen and (max-width: 736px) {
+  .icon-button .icon-container img {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+.icon-button .text-container {
+  height: 5rem;
+  border-radius: 0 0.30625rem 0.30625rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 736px) {
+  .icon-button .text-container {
+    height: 4rem;
+  }
+}
+
+.icon-button.orange .icon-container {
+  background: rgb(255, 126, 57);
+}
+.icon-button.orange .text-container {
+  background: rgb(255, 145, 73);
+}
+
+.icon-button.lime .icon-container {
+  background: #1ec481;
+}
+.icon-button.lime .text-container {
+  background: #28d094;
+}
+
+.icon-button.purple .icon-container {
+  background: #535be2;
+}
+.icon-button.purple .text-container {
+  background: #666ee8;
+}
+
+.icon-button.blue .icon-container {
+  background: #168dee;
+}
+.icon-button.blue .text-container {
+  background: #1e9ff2;
+}
+
+/*# sourceMappingURL=icon-button.css.map */
