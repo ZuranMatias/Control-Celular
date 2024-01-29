@@ -1,12 +1,12 @@
 import React from 'react'
 
-function CarouselContent({children, height, backgroundNumber}) {
+function CarouselContent({children, height, backgroundNumber, style}) {
   if (!backgroundNumber) {backgroundNumber = "1"}
   
   return (
-    <div className='carousel-height'>
+    <div className='carousel-height' style={style}>
         <div className='carousel-content'> {children} </div>
-        <div className="carousel-background" style={{backgroundImage: `url(./Images/carousel${backgroundNumber}.png)` }}/>
+        {backgroundNumber > 0 && <div className="carousel-background" style={{backgroundImage: `url(./Images/carousel${backgroundNumber}.png)` }}/>}
       </div>
   )
 }

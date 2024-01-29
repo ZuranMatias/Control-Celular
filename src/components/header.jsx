@@ -4,7 +4,7 @@ import HeaderCarousel from './carousel/carousel'
 
 function Header() {
 
-  const height = "80vh"
+  const height = "95vh"
   const upperMargin = "10vh"
 
   return (

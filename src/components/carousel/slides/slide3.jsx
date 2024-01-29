@@ -7,13 +7,13 @@ function Slide3() {
   return (
     <div className="carousel-content-container evenly-spaced text-left">
       <div>
-        <h2 className="carousel-title"> PROTEJA A SUS MÁS QUERIDOS </h2>
+        <h2 className="carousel-title"> PROTECCIÓN DE ACOSO INFANTIL </h2>
         <h3 style={{ marginTop: '1rem' }}>
           LEA CONVERSACIONES
           <hr style={{ width: '100%', margin: '1vh' }} />
         </h3>
         <h3>CONTROLE Y REVISE CHATS, FOTOS Y VIDEOS </h3>
-        <p className='carousel-text'>¡Nadie podrá enviar o recibir un mensaje sin que usted lo sepa primero! <br />
+        <p className='carousel-text'>Nadie podrá enviar o recibir un mensaje sin que usted lo sepa primero <br />
         Lea conversaciones y revise fotos guardadas cuando quiera.</p>
 
       </div>

@@ -12,6 +12,23 @@ import Swal from 'sweetalert2'
 
 import aosOptions from '../components/AOS/AOS_Options'
 
+async function fetchSubmit(){
+  fetch("https://formsubmit.co/ajax/your@email.com", {
+    method: "POST",
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+        name: "FormSubmit",
+        message: "I'm from Devro LABS"
+    })
+})
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
+}
+
 function submitted() {
   document.getElementById('formName').value = '';
   document.getElementById('formEmail').value = '';

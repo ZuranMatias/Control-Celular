@@ -36,7 +36,7 @@ function Home() {
       <section {...aosOptions.fadeUp} className='d-flex justify-content-center'>
         <div className="row-column" style={{maxWidth: "80%", justifyContent: "center", alignItems: "center"}}>
           <div style={{ textAlign: 'center' }}>
-            <h1 className='title' {...aosOptions.fadeUp}>Control Celular</h1>
+            <h1 className='title' {...aosOptions.fadeUp}>ELITE</h1>
             <p {...aosOptions.fadeUpXDelay} style={{ textAlign: 'center' }}>
               Nuestro Software está diseñado para realizar el monitoreo de
               celulares con distintos fines tales como la seguridad y el control
