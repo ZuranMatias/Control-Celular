@@ -50,7 +50,7 @@
     @media screen and (max-width: 736px) { max-width: 70vw; }
 }
 
-@mixin divider-content($bgColor: rgb(58, 197, 255)) {
+@mixin divider-content($bgColor: #698cde) {
     display: flex;
     flex-direction: row;
     justify-content: center;

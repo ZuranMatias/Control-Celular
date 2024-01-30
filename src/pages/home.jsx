@@ -15,6 +15,12 @@ const mapIcon = './icons/alfiler.png'
 const minorIcon = './icons/no-menores.png'
 const contactIcon = './icons/desconocido.png'
 
+//Gradients
+const gradient1 = {
+  background: "rgb(233,233,233)",
+  background: "linear-gradient(270deg, rgba(233,233,233,0.5) 0%, rgba(191,191,191,0.5) 100%)"
+}
+
 function Home() {
   return (
     <>
@@ -22,19 +28,12 @@ function Home() {
       <section>
         <Header />
       </section>
-      <Separator
-        id="headerSeparator"
-        scrollTargetId={'openingSection'}
-        color={'rgb(255,255,255)'}
-      />
+      <Separator id="headerSeparator" scrollTargetId={'openingSection'} color={'rgb(255,255,255)'} />
 
       {/* Introductory Information */}
-      <div
-        id="openingSection"
-        className="position-relative top-0 start-50 translate-middle-x mb-3"
-      />
-      <section {...aosOptions.fadeUp} className='d-flex justify-content-center'>
-        <div className="row-column" style={{maxWidth: "80%", justifyContent: "center", alignItems: "center"}}>
+      <div id="openingSection" className="position-relative top-0 start-50 translate-middle-x" />
+      <section {...aosOptions.fadeUp} className='d-flex justify-content-center pt-3' style={gradient1}>
+        <div className="row-column" style={{maxWidth: "80%", justifyContent: "center", alignItems: "center"}} >
           <div style={{ textAlign: 'center' }}>
             <h1 className='title' {...aosOptions.fadeUp}>ELITE</h1>
             <p {...aosOptions.fadeUpXDelay} style={{ textAlign: 'center' }}>
@@ -58,11 +57,11 @@ function Home() {
       </section>
 
       {/* Protection Section */}
-      <section /* {...aosOptions.fadeDown} */>
+      <section>
         <Wrapper
-          color={'light-blue'}
           title={'¿Cómo puede proteger?'}
           mobileTitle={'¿Protección?'}
+          fontColor={"white"}
         >
           <div className="row-column">
             <TitledParagraph title={'Mensajes Explícitos'} iconSrc={minorIcon}>
@@ -84,11 +83,6 @@ function Home() {
               dispositivo.
             </TitledParagraph>
           </div>
-          {/* <div className='row-column desktop-only'>
-            <img className='divider-bottom-image' src='./Images/Home/hand-holding-phone.png' {...aosOptions.fadeRight}/>
-            <img className='divider-bottom-image' src='./Images/Home/phone-gps.png' {...aosOptions.fadeRightDelay}/>
-            <img className='divider-bottom-image' src='./Images/Home/hacker.png' {...aosOptions.fadeRightXDelay}/>
-          </div> */}
           <div className="row-column desktop-only">
             <img
               className="divider-bottom-image-framed"

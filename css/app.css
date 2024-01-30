@@ -208,7 +208,7 @@ ul {
   color: rgb(255, 255, 255);
   position: relative;
   width: 100%;
-  background: rgb(58, 197, 255) url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
+  background: #698cde url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
   padding: 50px 0px 0px;
   bottom: 0;
   box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.5);
@@ -221,7 +221,7 @@ ul {
   text-transform: uppercase;
   text-wrap: nowrap;
   top: -46.8px;
-  background: rgb(58, 197, 255) url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
+  background: #698cde url("./overlay.png") repeat scroll 0% 0%/auto padding-box border-box;
   font: 700 14.4px/46.8px "Source Sans Pro", sans-serif;
   width: 360px;
   padding: 7.2px;
@@ -1229,7 +1229,7 @@ ul {
   width: 54px;
   z-index: 1;
   backdrop-filter: blur(10px);
-  background-color: rgba(92, 95, 103, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .sidebar-toggle-sticky img {
   filter: invert(100%) sepia(53%) saturate(1%) hue-rotate(298deg) brightness(107%) contrast(101%);
@@ -1246,8 +1246,9 @@ ul {
   height: 38px;
   width: 54px;
   z-index: 1;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
-  background-color: rgba(92, 95, 103, 0.5);
+  background-color: rgba(105, 103, 103, 0.7);
 }
 .sidebar-toggle-static img {
   filter: invert(100%) sepia(53%) saturate(1%) hue-rotate(298deg) brightness(107%) contrast(101%);
@@ -1256,7 +1257,8 @@ ul {
 .sidebar-toggle-container {
   top: 0;
   position: fixed;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
   width: 100%;
   height: 50px !important;
   height: auto;

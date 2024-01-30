@@ -5,7 +5,7 @@ $light-blue: #CCE7FD;
 $contact-background: rgba(55, 222, 169, 0.5);
 $footer-background: rgba(0,0,0,0.9);
 
-$divider-light-blue: #CCE7FD;
+$divider-light-blue: $light-blue;
 
 $navbar-text-static: black;
 $navbar-text-sticky: white;
@@ -18,7 +18,7 @@ $navbar-static-color-hover: rgba(255,255,255,1);
 $navbar-sticky-color: rgba(0,0,0, 0.4);
 $navbar-sticky-color-hover: rgba(0,0,0,0.85);
 
-$black-transparent: rgba(92, 95, 103, 0.5);
+$black-transparent: rgba(0, 0, 0, 0.5);
 $deep-blue: rgb(24,27,30);
 
 $scrollbar-thumb-color: rgba(0,0,0, 0.4);
