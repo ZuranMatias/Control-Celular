@@ -9,7 +9,7 @@ function Navbar({isVisible}) {
       <NavbarLink address={"/"}>Inicio</NavbarLink>
       <NavbarLink>Control Parental</NavbarLink>
       <NavbarLink>Seguridad Personal</NavbarLink>
-      <NavbarLink>Faq</NavbarLink>
+      <NavbarLink address={"/faq"}>¿Cómo Funciona?</NavbarLink>
       <NavbarLink address={"/contacto"}>Contacto</NavbarLink>
       </ul>
     </nav>

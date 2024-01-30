@@ -9,9 +9,9 @@ const SideBar = (props) => {
         <ul>
           <SidebarLink address={'/'}>Inicio</SidebarLink>
           <SidebarLink address={'/'}>Control Parental</SidebarLink>
-          <SidebarLink address={'/'}>Seguridad Personal</SidebarLink>
-          <SidebarLink address={'/'}>FAQ</SidebarLink>
-          <SidebarLink address={'/'}>Contacto</SidebarLink>
+          <SidebarLink address={'/'}>Seguridad</SidebarLink>
+          <SidebarLink address={'/faq'}>Preguntas</SidebarLink>
+          <SidebarLink address={'/contacto'}>Contacto</SidebarLink>
         </ul>
           {/* <div onClick={props.toggleSidebar} className="sidebar-toggle-sticky">
             <img src="./menu.png" alt="mobile menu toggle" style={{ maxWidth: '50%', maxHeight: '40%' }} />
