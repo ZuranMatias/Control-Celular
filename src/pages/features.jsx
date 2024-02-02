@@ -7,7 +7,8 @@ import aosOptions from '../components/AOS/AOS_Options'
 import { featuresList } from './features/featuresList'
 
 let cards = []
-for (let i = 0; i < featuresList.length; i++) {
+const cardNumber = featuresList.length
+for (let i = 0; i < cardNumber; i++) {
   cards.push(
     <div {...aosOptions.fadeUp} key={`cardFeature${i}`}>
     <FeatureCards

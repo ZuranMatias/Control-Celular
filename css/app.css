@@ -747,10 +747,12 @@ ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-content: space-around;
+  width: 70vw;
 }
 @media screen and (min-width: 737px) {
   .cards-container {
-    max-height: 100vh;
+    max-height: 150vh;
     justify-content: space-evenly;
   }
 }
@@ -1041,6 +1043,7 @@ ul {
   height: 30vh;
   padding: 1vw;
   margin: 1.5vh;
+  margin-bottom: 2vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

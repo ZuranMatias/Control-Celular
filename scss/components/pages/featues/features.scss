@@ -19,11 +19,14 @@ $features-image-tint: rgba($senary, 0.7);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-content: space-around;
+
+    width: 70vw;
 
     @media screen and (max-width: 736px){}
 
     @media screen and (min-width: 737px){
-        max-height: 100vh;
+        max-height: 150vh;
         justify-content: space-evenly;
     }
 }
