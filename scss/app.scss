@@ -1,9 +1,9 @@
 //Basics
+@import "./basics/mixins.scss";
 @import "./basics/utils.scss";
 @import "./basics/reset.scss";
 @import "./basics/colors.scss";
 @import "./basics/fonts.scss";
-@import "./basics/mixins.scss";
 @import "./basics/footer.scss";
 
 //Animations
@@ -15,8 +15,12 @@
     @import "./components/dividers/mixins.scss";
     @import "./components/dividers/container.scss";
 
-    //Contact
-    @import "./components/contact/contact.scss";
+    //Dividers
+    @import "./components/dividers/shadow-divider.scss";
+
+    //Pages
+    @import "./components/pages/contact/contact.scss";
+    @import "./components/pages/featues/features.scss";
 
     //Buttons
     @import "./components/buttons/contact-button.scss";
@@ -26,6 +30,14 @@
     //faq
     @import "./components/faq/questions.scss";
 
+    //Carousels
+    @import "./components/carousels/card-carousel/card-carousel.scss";
+    @import "./components/carousels/header-carousel/carousel.scss";
+    @import "./components/carousels/header-carousel/carousel-content.scss";
+
+    //Cards
+    @import "./components/cards/feature-cards.scss";
+
 @import "./components/icon-containers.scss";
 @import "./components/text.scss";
 @import "./components/scrollbar.scss";
@@ -34,5 +46,3 @@
 @import "./components/header.scss";
 @import "./components/section-title.scss";
 @import "./components/sidebar.scss";
-@import "./components/carousel.scss";
-@import "./components/carousel-content.scss";

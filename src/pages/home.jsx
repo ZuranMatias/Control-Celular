@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 import Header from '../components/header'
 
@@ -7,6 +8,8 @@ import Separator from '../components/separator'
 import TitledParagraph from '../components/titled_paragraph'
 import WhatsappStickyButton from '../components/buttons/whatsappStickyButton'
 import CircleIconButton from '../components/buttons/circleIconButton'
+
+import CardCarouselContainer from '../components/cardCarousel/cardCarouselContainer'
 
 import aosOptions from '../components/AOS/AOS_Options'
 
@@ -17,8 +20,14 @@ const contactIcon = './icons/desconocido.png'
 
 //Gradients
 const gradient1 = {
-  background: "rgb(233,233,233)",
-  background: "linear-gradient(270deg, rgba(233,233,233,0.5) 0%, rgba(191,191,191,0.5) 100%)"
+  background: 'rgb(233,233,233)',
+  background:
+    'linear-gradient(270deg, rgba(233,233,233,0.5) 0%, rgba(191,191,191,0.5) 100%)',
+}
+const gradient2 = {
+  background: 'rgb(255,255,255)',
+  background:
+    'linear-gradient(0deg, rgba(255,255,255,1) 9%, rgba(196,196,196,0.3) 100%)',
 }
 
 function Home() {
@@ -28,40 +37,65 @@ function Home() {
       <section>
         <Header />
       </section>
-      <Separator id="headerSeparator" scrollTargetId={'openingSection'} color={'rgb(255,255,255)'} />
+      <Separator
+        id="headerSeparator"
+        scrollTargetId={'openingSection'}
+        color={'rgb(255,255,255)'}
+      />
 
       {/* Introductory Information */}
-      <div id="openingSection" className="position-relative top-0 start-50 translate-middle-x" />
-      <section {...aosOptions.fadeUp} className='d-flex justify-content-center pt-3' style={gradient1}>
-        <div className="row-column" style={{maxWidth: "80%", justifyContent: "center", alignItems: "center"}} >
-          <div style={{ textAlign: 'center' }}>
-            <h1 className='title' {...aosOptions.fadeUp}>ELITE</h1>
-            <p {...aosOptions.fadeUpXDelay} style={{ textAlign: 'center' }}>
-              Nuestro Software está diseñado para realizar el monitoreo de
-              celulares con distintos fines tales como la seguridad y el control
-              parental.
-              <span className="desktop-only">
-                Esto es posible gracias a que permite grabar y hacer copias de
-                toda la información que genere un dispositivo.
-              </span>
-              <span className="mobile-only">
-                <br />
-                <br />
-              </span>
-              En esta página, te contamos acerca de nuestro servicio para que
-              puedas, entre otras cosas, monitorear Whatsapp en celulares.
-            </p>
+      <div style={gradient1}>
+        <div
+          id="openingSection"
+          className="position-relative top-0 start-50 translate-middle-x"
+        />
+        <section
+          {...aosOptions.fadeUp}
+          className="d-flex justify-content-center pt-3"
+        >
+          <div
+            className="row-column"
+            style={{
+              maxWidth: '80%',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <div style={{ textAlign: 'center' }}>
+              <h1 className="title" {...aosOptions.fadeUp}>
+                ELITE
+              </h1>
+              <p {...aosOptions.fadeUpXDelay} style={{ textAlign: 'center' }}>
+                Nuestro Software está diseñado para realizar el monitoreo de
+                celulares con distintos fines tales como la seguridad y el
+                control parental.
+                <span className="desktop-only">
+                  Esto es posible gracias a que permite grabar y hacer copias de
+                  toda la información que genere un dispositivo.
+                </span>
+                <span className="mobile-only">
+                  <br />
+                  <br />
+                </span>
+                En esta página, te contamos acerca de nuestro servicio para que
+                puedas, entre otras cosas, monitorear Whatsapp en celulares.
+              </p>
+            </div>
+            <img
+              src="./Images/Home/hand-holding-phone.png"
+              alt="Mano Usando una App"
+              className="responsive-picture"
+            />
           </div>
-            <img src="./Images/Home/hand-holding-phone.png" alt="Mano Usando una App" className='responsive-picture' />
-        </div>
-      </section>
+        </section>
+      </div>
 
       {/* Protection Section */}
       <section>
         <Wrapper
           title={'¿Cómo puede proteger?'}
           mobileTitle={'¿Protección?'}
-          fontColor={"white"}
+          fontColor={'white'}
         >
           <div className="row-column">
             <TitledParagraph title={'Mensajes Explícitos'} iconSrc={minorIcon}>
@@ -105,7 +139,7 @@ function Home() {
 
       {/* Instructions Information */}
       <section {...aosOptions.fadeUp}>
-        <div className="blank-container d-flex flex-column">
+        <div style={gradient2} className="blank-container d-flex flex-column">
           <h1 style={{ textAlign: 'center' }} {...aosOptions.fadeUp}>
             ¡Control Completo en 3 Pasos!
           </h1>
@@ -133,6 +167,12 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <div className="h-divider">
+        <div className="shadow-divider" {...aosOptions.fadeUp}></div>
+        <h2 style={{ textAlign: 'center', margin: '1vw' }} {...aosOptions.fadeUp} > Algunas de Nuestras Funciones </h2>
+        <div {...aosOptions.fadeUp}><CardCarouselContainer /></div>
+      </div>
 
       <WhatsappStickyButton />
     </>

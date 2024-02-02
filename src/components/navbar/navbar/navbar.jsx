@@ -8,8 +8,8 @@ function Navbar({isVisible}) {
       <ul>
       <NavbarLink address={"/"}>Inicio</NavbarLink>
       <NavbarLink>Control Parental</NavbarLink>
-      <NavbarLink>Seguridad Personal</NavbarLink>
-      <NavbarLink address={"/faq"}>¿Cómo Funciona?</NavbarLink>
+      <NavbarLink address={"/features"}>¿Qué Funciones Tiene?</NavbarLink>
+      <NavbarLink address={"/faq"}>¿Preguntas?</NavbarLink>
       <NavbarLink address={"/contacto"}>Contacto</NavbarLink>
       </ul>
     </nav>

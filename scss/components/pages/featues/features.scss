@@ -1,0 +1,29 @@
+$features-image-url: "/Images/features/features.jpg";
+//$features-image-tint: rgba(0,0,255,0.3);
+$features-image-tint: rgba($senary, 0.7);
+
+.features-container {
+    @include background-tint($features-image-tint, $features-image-url);
+    background-size: cover;
+
+    & h1 {
+        color: white;
+        @include standard-text-shadow;
+        margin: 5vh;
+
+        &:hover {transform: scale(1.05);}
+    }
+} 
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 736px){}
+
+    @media screen and (min-width: 737px){
+        max-height: 100vh;
+        justify-content: space-evenly;
+    }
+}

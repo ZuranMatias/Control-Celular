@@ -1,0 +1,53 @@
+.carousel-height {
+  height: 90vh;
+}
+
+.control-dots {
+  text-align: start !important;
+}
+
+.carousel-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: absolute;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-background {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../public/Images/carousel1.png");
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  filter: blur(5px) brightness(0.7);
+  top: 0;
+}
+
+.dark-blur {
+  filter: blur(5px) brightness(0.7);
+}
+
+.bright-blur {
+  filter: blur(5px) brightness(1);
+}
+
+@media screen and (max-width: 736px) {
+  .control-arrow {
+    display: none;
+  }
+  .carousel-content {
+    padding-top: 0;
+  }
+  .carousel-height {
+    height: 80vh;
+  }
+}
+
+/*# sourceMappingURL=carousel.css.map */
