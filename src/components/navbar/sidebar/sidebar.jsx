@@ -9,7 +9,7 @@ const SideBar = (props) => {
         <ul>
           <SidebarLink address={'/'}>Inicio</SidebarLink>
           <SidebarLink address={'/'}>Control Parental</SidebarLink>
-          <SidebarLink address={'/'}>Seguridad</SidebarLink>
+          <SidebarLink address={'/features'}>Funciones</SidebarLink>
           <SidebarLink address={'/faq'}>Preguntas</SidebarLink>
           <SidebarLink address={'/contacto'}>Contacto</SidebarLink>
         </ul>
