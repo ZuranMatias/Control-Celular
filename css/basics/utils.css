@@ -84,4 +84,8 @@
   color: grey;
 }
 
+.grow-on-hover:hover {
+  transform: scale(1.2);
+}
+
 /*# sourceMappingURL=utils.css.map */

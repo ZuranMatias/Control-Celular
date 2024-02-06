@@ -6,7 +6,7 @@ $features-image-tint: rgba($senary, 0.7);
     @include background-tint($features-image-tint, $features-image-url);
     background-size: cover;
 
-    & h1 {
+    & h1,h2 {
         color: white;
         @include standard-text-shadow;
         margin: 5vh;

@@ -1,3 +1,4 @@
+import { faChrome } from "@fortawesome/free-brands-svg-icons"
 import {
   faGift,
   faComputer,
@@ -7,15 +8,12 @@ import {
   faPhone,
   faLock,
   faVideoCamera,
-  faLocationDot
+  faLocationDot,
+  faMicrophone,
+  faCircle,
 } from '@fortawesome/free-solid-svg-icons'
 //  { icon: faKeyboard, text: "", desc: "" },
 export const featuresList = [
-  {
-    icon: faKeyboard,
-    text: 'Keylogger',
-    desc: 'Registro de cualquier búsqueda, mensaje o contraseña tecleada',
-  },
   {
     icon: faLock,
     text: 'Bloqueo De Aplicaciones',
@@ -36,12 +34,12 @@ export const featuresList = [
     icon: faMessage,
     text: 'Registro De Chats',
     desc:
-      'Lea cualquier conversación con cualquier contacto registrado en el dispositivo',
+      'Monitore mensajes de Texto y Emails. Aplicable para line, twitter, faccebook, skype, tinder y telegram.',
   },
   {
     icon: faPhone,
     text: 'Interceptar Llamadas',
-    desc: 'Escuche llamadas telefónicas en vivo',
+    desc: 'Graba las charlas por teléfono',
   },
   {
     icon: faCamera,
@@ -49,8 +47,13 @@ export const featuresList = [
     desc: 'Fotos tomadas en cualquier momento cámara frontal y trasera',
   },
   {
-    icon: faGift,
-    text: 'Actualizaciones Gratuitas',
-    desc: 'Automáticas y Rápidas',
+    icon: faMicrophone,
+    text: 'Audio en vivo',
+    desc: 'Permite activar el micrófono a distancia',
+  },
+  {
+    icon: faChrome,
+    text: 'Historial de navegación',
+    desc: 'Registra el historial de páginas web visitadas',
   },
 ]

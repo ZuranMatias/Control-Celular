@@ -1,0 +1,17 @@
+.free-trial {
+  width: auto;
+  height: 40vh;
+  align-self: center;
+  margin-bottom: 5vh;
+}
+@media screen and (max-width: 736px) {
+  .free-trial {
+    width: auto;
+    height: 40vh;
+  }
+}
+.free-trial:hover {
+  transform: scale(1.05);
+}
+
+/*# sourceMappingURL=home.css.map */

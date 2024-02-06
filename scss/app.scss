@@ -1,48 +1,51 @@
 //Basics
-@import "./basics/mixins.scss";
-@import "./basics/utils.scss";
-@import "./basics/reset.scss";
-@import "./basics/colors.scss";
-@import "./basics/fonts.scss";
-@import "./basics/footer.scss";
+@import './basics/mixins.scss';
+@import './basics/utils.scss';
+@import './basics/reset.scss';
+@import './basics/colors.scss';
+@import './basics/fonts.scss';
+@import './basics/footer.scss';
 
 //Animations
-@import "./animations/bobbing.scss";
-@import "./animations/fading.scss";
+@import './animations/bobbing.scss';
+@import './animations/fading.scss';
 
 //Components
-    //Component Mixins
-    @import "./components/dividers/mixins.scss";
-    @import "./components/dividers/container.scss";
+//Component Mixins
+@import './components/dividers/mixins.scss';
+@import './components/dividers/container.scss';
 
-    //Dividers
-    @import "./components/dividers/shadow-divider.scss";
+//Dividers
+@import './components/dividers/shadow-divider.scss';
 
-    //Pages
-    @import "./components/pages/contact/contact.scss";
-    @import "./components/pages/featues/features.scss";
+//Pages
+@import './components/pages/home/home.scss';
+@import './components/pages/contact/contact.scss';
+@import './components/pages/featues/features.scss';
+@import './components/pages/faq/questions.scss';
 
-    //Buttons
-    @import "./components/buttons/contact-button.scss";
-    @import "./components/buttons/whatsapp-button.scss";
-    @import "./components/buttons/icon-button.scss";
+//Buttons
+@import './components/buttons/contact-button.scss';
+@import './components/buttons/whatsapp-button.scss';
+@import './components/buttons/icon-button.scss';
 
-    //faq
-    @import "./components/faq/questions.scss";
+//Carousels
+@import './components/carousels/card-carousel/card-carousel.scss';
+@import './components/carousels/header-carousel/carousel.scss';
+@import './components/carousels/header-carousel/carousel-content.scss';
 
-    //Carousels
-    @import "./components/carousels/card-carousel/card-carousel.scss";
-    @import "./components/carousels/header-carousel/carousel.scss";
-    @import "./components/carousels/header-carousel/carousel-content.scss";
+//Images
+@import "./components/images/framed.scss";
+@import "./components/images/sizes.scss";
 
-    //Cards
-    @import "./components/cards/feature-cards.scss";
+//Cards
+@import './components/cards/feature-cards.scss';
 
-@import "./components/icon-containers.scss";
-@import "./components/text.scss";
-@import "./components/scrollbar.scss";
-@import "./components/dividers/semicircle.scss";
-@import "./components/navbar.scss";
-@import "./components/header.scss";
-@import "./components/section-title.scss";
-@import "./components/sidebar.scss";
+@import './components/icon-containers.scss';
+@import './components/text.scss';
+@import './components/scrollbar.scss';
+@import './components/dividers/semicircle.scss';
+@import './components/navbar.scss';
+@import './components/header.scss';
+@import './components/section-title.scss';
+@import './components/sidebar.scss';

@@ -1,0 +1,15 @@
+.free-trial {
+    width: auto;
+    height: 40vh;
+
+    align-self: center;
+
+    @media screen and (max-width: 736px) {
+    width: auto;
+    height: 40vh;
+    }
+
+    margin-bottom: 5vh;
+
+    &:hover { transform: scale(1.05); }
+}

@@ -74,3 +74,9 @@ $transition-speed: all 0.5s ease-out;
       color: grey;
     }
   }
+
+  .grow-on-hover {
+    &:hover {
+      transform: scale(1.2);
+    }
+  }

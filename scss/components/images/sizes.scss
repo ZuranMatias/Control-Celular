@@ -1,0 +1,18 @@
+.ten-percent {
+    width: 10vw !important;
+    height: auto;
+}
+
+.fifteen-percent-desktop {
+    @media screen and (min-width: 737px) {
+        width: 15vw !important;
+        height: auto;
+    }
+}
+
+.forty-percent-mobile {
+    @media screen and (max-width: 736px) {
+        width: 40vw !important;
+        height: auto;
+    }
+}

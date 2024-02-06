@@ -120,7 +120,7 @@ function Home() {
           <div className="row-column desktop-only">
             <img
               className="divider-bottom-image-framed"
-              src="./Images/Home/phone-chatting.png"
+              src="./Images/Home/Slides/phone-chatting.png"
               {...aosOptions.fadeRight}
             />
             <img
@@ -173,6 +173,23 @@ function Home() {
         <h2 style={{ textAlign: 'center', margin: '1vw' }} {...aosOptions.fadeUp} > Algunas de Nuestras Funciones </h2>
         <div {...aosOptions.fadeUp}><CardCarouselContainer /></div>
       </div>
+
+      <section style={{marginTop: "5vh"}}>
+        <Wrapper
+          title={'Primero quiero probarlo'}
+          mobileTitle={'¡Pruebe Ya!'}
+          fontColor={'white'}
+        >
+          <div className='row-column'>
+            <div className='grow-on-hover'>
+            <img src='/Images/Home/free-trial.png' className='free-trial' {...aosOptions.fadeUp}/></div>
+            <TitledParagraph title={'¿No está seguro? ¡Pruebe gratis!'} strong>
+              Nuestro servicio ofrece un período de prubeba totalmente libre de costo de hasta dos días. <br/><br/>
+              No tiene por qué decidir comprar un producto del cual no está seguro hasta que lo pruebe usted mismo.
+            </TitledParagraph>
+          </div>
+        </Wrapper>
+      </section>
 
       <WhatsappStickyButton />
     </>
