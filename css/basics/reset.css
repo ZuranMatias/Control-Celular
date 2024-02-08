@@ -10,4 +10,8 @@ ul {
   list-style: none;
 }
 
+body {
+  padding-right: 0 !important;
+}
+
 /*# sourceMappingURL=reset.css.map */

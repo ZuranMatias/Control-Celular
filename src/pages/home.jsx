@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { useEffect } from 'react'
 
 import Header from '../components/header'
 
@@ -19,18 +20,19 @@ const minorIcon = './icons/no-menores.png'
 const contactIcon = './icons/desconocido.png'
 
 //Gradients
-const gradient1 = {
+export const gradient1 = {
   background: 'rgb(233,233,233)',
   background:
     'linear-gradient(270deg, rgba(233,233,233,0.5) 0%, rgba(191,191,191,0.5) 100%)',
 }
-const gradient2 = {
+export const gradient2 = {
   background: 'rgb(255,255,255)',
   background:
     'linear-gradient(0deg, rgba(255,255,255,1) 9%, rgba(196,196,196,0.3) 100%)',
 }
 
 function Home() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
   return (
     <>
       {/* Header */}

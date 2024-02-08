@@ -34,7 +34,7 @@ const data = {
   ],
 }
 
-const styles = {
+const faqStyles = {
   bgColor: 'none',
   titleTextColor: 'white',
   rowTitleColor: 'white',
@@ -49,11 +49,12 @@ const config = {
 }
 
 export default function FAQ() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
   return (
     <div className="faq-background">
       <div className='faq-text-container' {...aosOptions.fadeUp}>
         <h1><strong>Preguntas Frecuentes</strong></h1>
-        <Faq data={data} styles={styles} config={config} />
+        <Faq data={data} styles={faqStyles} config={config} />
       </div>
     </div>
   )

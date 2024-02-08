@@ -6,6 +6,7 @@ import Home from './home'
 import Contacto from './contact'
 import FAQ from './faq'
 import Features from './features'
+import Pricing from './pricing'
 
 function PageRoutes({children}) {
   return (
@@ -14,6 +15,7 @@ function PageRoutes({children}) {
             <Route exact path='/contacto' element={<Contacto/>}/>
             <Route exact path='/faq' element={<FAQ/>}/>
             <Route exact path='/features' element={<Features/>}/>
+            <Route exact path='/pricing' element={<Pricing/>}/>
         </Routes>
   )
 }

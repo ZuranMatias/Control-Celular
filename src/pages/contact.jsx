@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 
 import { WhatsappAPIButton } from '../components/buttons/contactButtons'
 import { GmailApiButton } from '../components/buttons/contactButtons'
@@ -6,11 +7,14 @@ import { GmailApiButton } from '../components/buttons/contactButtons'
 import Separator from '../components/separator'
 import VerticalLine from '../components/dividers/verticalLine'
 
-import ContactForm from '../components/contactForm'
+import ContactForm from '../components/contactForm/contactForm'
 
 import aosOptions from '../components/AOS/AOS_Options'
 
+const whatsappLink = "whatsapp://send?text=Tu mensaje!&phone=573"
+
 function Contacto() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
   return (
     <div className="d-flex flex-column">
       {/* Header */}

@@ -6,6 +6,9 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 import { Button } from 'react-bootstrap'
 
+import { whatsappLink } from '../../pages/contact/contactUrls'
+import { gmailLink } from '../../pages/contact/contactUrls'
+
 function styleIcon(color) {
   return {
     backgroundColor: color,
@@ -22,7 +25,7 @@ export function WhatsappAPIButton() {
     <div className='contact-button'>
       <a className="d-flex flex-row"
         style={{ textDecoration: 'none' }}
-        href="https://api.whatsapp.com/send?phone=5491140401176&amp;text=Hola, me interesa el software ofrecido."
+        href={whatsappLink}
         target="_blank" rel="noopener noreferrer" >
         <Button size="lg" variant="success" className='contact-button-icon' style={{ ...styleIcon('#25D366') }}> <FontAwesomeIcon size="xl" icon={faWhatsapp} /> </Button>
         <Button size="lg" variant="success" className='contact-button-text' style={{ ...styleText('#128C7E') }}> Whatsapp </Button>
@@ -33,14 +36,19 @@ export function WhatsappAPIButton() {
 
 export function GmailApiButton() {
   return (
+    <div>
+    <label htmlFor="gmailButton" style={{transform: "translate(20px,15px)", fontSize: "15px"}} id='gmailApiButtonLabel'></label>
     <div className='contact-button'>
       <a className="d-flex flex-row" style={{ textDecoration: 'none' }}
-        href="mailto:linceinvestigacion@gmail.com?Subject=Consulta%20sobre%Aplicación%20Elite"
+        href={gmailLink}
         target="_top"
+        onClick={() => {document.getElementById("gmailApiButtonLabel").innerHTML = "<a href='https://mail.google.com/' target='_blank'>linceinvestigacion@gmail.com</a>"}}
+        name="gmailButton"
       >
         <Button size="lg" variant="success" className='contact-button-icon' style={{ ...styleIcon('#DB4437') }}> <FontAwesomeIcon size="xl" icon={faEnvelope} /> </Button>
         <Button size="lg" variant="success" className='contact-button-text' style={{ ...styleText('#EEEEEE'), color: 'black' }} > Correo </Button>
       </a>
+    </div>
     </div>
   )
 }
