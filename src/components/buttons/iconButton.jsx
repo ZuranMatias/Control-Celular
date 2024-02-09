@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 function IconButton({style, type, children}) {
   var image
@@ -29,14 +30,16 @@ function IconButton({style, type, children}) {
   }
 
   return (
+    <NavLink to={"/features"} style={{textDecoration: "none"}} className={"grow-on-hover"}>
     <div className={`icon-button ${colorClass} d-flex`} style={style}>
       <div className="icon-container">
         <img src={image} />
       </div>
       <div className="text-container">
-        <h5 style={{padding: "1rem"}}>{children}</h5>
+        <h5 style={{padding: "1rem", color: "white"}}>{children}</h5>
       </div>
     </div>
+    </NavLink>
   )
 }
 

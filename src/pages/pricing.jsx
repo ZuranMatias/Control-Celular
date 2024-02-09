@@ -13,6 +13,7 @@ function Pricing() {
   for (let i = 0; i < pricesList.length; i++) {
     priceCardList.push(
       <PricingCard
+        key={`pricingCard${i}`}
         title={pricesList[i].title}
         children={pricesList[i].children}
         price={pricesList[i].price}

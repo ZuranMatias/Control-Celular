@@ -150,7 +150,7 @@ function Home() {
               {...aosOptions.fadeUp}
               imgName={'download'}
               caption={
-                '1. Instale el software en el dispositivo o compre uno con el programa ya instalado.'
+                '1. Instale el software en el dispositivo.'
               }
             />
             <CircleIconButton
@@ -184,7 +184,9 @@ function Home() {
         >
           <div className='row-column'>
             <div className='grow-on-hover'>
-            <img src='/Images/Home/free-trial.png' className='free-trial' {...aosOptions.fadeUp}/></div>
+              <NavLink to={"/pricing"}>
+            <img src='/Images/Home/free-trial.png' className='free-trial' {...aosOptions.fadeUp}/>
+            </NavLink></div>
             <TitledParagraph title={'¿No está seguro? ¡Pruebe gratis!'} strong>
               Nuestro servicio ofrece un período de prubeba totalmente libre de costo de hasta dos días. <br/><br/>
               No tiene por qué decidir comprar un producto del cual no está seguro hasta que lo pruebe usted mismo.

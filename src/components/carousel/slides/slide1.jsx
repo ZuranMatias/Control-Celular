@@ -1,5 +1,6 @@
 import React from 'react'
 import aosOptions from '../../AOS/AOS_Options'
+import { NavLink } from 'react-router-dom'
 
 import { Button } from 'react-bootstrap'
 
@@ -27,8 +28,10 @@ function Slide1() {
         </div>
 
         <div className="d-flex align-items-center" {...aosOptions.fadeUpXXDelay} >
-          <Button variant="primary" className="btn-primary" style={{ fontSize: 'larger' }} > Probar Ahora </Button>
-          <a href="" style={{ marginLeft: '1vw', fontSize: 'medium', textDecoration: 'none', color: '#34d8eb', }} > Demostración </a>
+          <Button variant="primary" className="btn-primary" style={{ fontSize: 'larger' }} > 
+          <NavLink style={{textDecoration: "none", color: "white"}} to={"/pricing"}>Probar Ahora</NavLink>
+          </Button>
+          <NavLink to={"/features"} style={{ marginLeft: '1vw', fontSize: 'medium', textDecoration: 'none', color: '#34d8eb', }} > Funciones </NavLink>
         </div>
       </div>
 

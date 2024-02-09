@@ -4,6 +4,8 @@ import { BrowserRouter } from 'react-router-dom'
 //Components
 import PageRoutes from './pages/routes'
 
+import HelmetComponent from './components/helmet'
+
 import NavbarContainer from './components/navbar/navbar_container'
 import Footer from './components/footer'
 
@@ -20,10 +22,11 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <HelmetComponent />
         <NavbarContainer />
         <PageRoutes />
       </BrowserRouter>
-      <Footer/>
+      <Footer />
     </>
   )
 }
