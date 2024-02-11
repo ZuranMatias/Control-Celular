@@ -16,3 +16,51 @@
 .pricing-bg {
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
+
+.pricing-text {
+    //textTransform: "uppercase", fontWeight: "600", color: "darkblue", 
+    width: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    cursor: pointer;
+
+    margin-bottom: 2vh !important;
+
+    @media screen and (max-width: 736px) {
+        width: 60vw;
+    }
+
+    & strong {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: darkblue;
+    }
+
+    &:hover {
+        & .pricing-card-title { transform: scale(1.2); }
+        & strong { color: red; }
+    }
+}
+
+.price-box-image {
+    height: 50vh;
+    margin: 15px;
+
+    //cursor: pointer;
+
+    &:hover {
+        transform: scale(1.2) rotate(37deg);
+    }
+}
+
+.price-title {
+    @include standard-text-shadow;
+    text-transform: uppercase;
+    &:hover {
+        color: darkblue;
+    }
+
+    z-index: 3;
+}

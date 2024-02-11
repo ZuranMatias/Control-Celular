@@ -5,6 +5,13 @@ export function whatsappApiMessageGenerator(message) {
     return `whatsapp://send?text=${message}&phone=5491140401176`
 }
 
+export function addTextBeforePhone(originalString, additionalText) {
+    const phoneIndex = originalString.indexOf("&phone=");
+    const modifiedString = originalString.slice(0, phoneIndex) + additionalText + originalString.slice(phoneIndex);
+    
+    return modifiedString;
+}
+
 export const whatsappLink = whatsappApiMessageGenerator()
 export const whatsappTrialLink = whatsappApiMessageGenerator("Hola, me interesa el software ofrecido. Me gustaría probar el período de prueba gratis de 2 días.")
 

@@ -1,19 +1,17 @@
-.pricing-card {
-  width: 20vw;
-  margin: 1rem 0.5rem 1rem 0.5rem;
-}
-@media screen and (max-width: 736px) {
-  .pricing-card {
-    width: 80vw;
-  }
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 59 |     @include standard-text-shadow;
+ *    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   scss\components\pages\pricing\cards.scss 59:5  root stylesheet */
 
-.card-ul li {
-  margin-bottom: 0.5rem;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 59 \2502      @include standard-text-shadow;\d\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\components\\pages\\pricing\\cards.scss 59:5  root stylesheet";
 }
-
-.pricing-bg {
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-}
-
-/*# sourceMappingURL=cards.css.map */

@@ -830,6 +830,48 @@ body {
   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
+.pricing-text {
+  width: 30vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 2vh !important;
+}
+@media screen and (max-width: 736px) {
+  .pricing-text {
+    width: 60vw;
+  }
+}
+.pricing-text strong {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: darkblue;
+}
+.pricing-text:hover .pricing-card-title {
+  transform: scale(1.2);
+}
+.pricing-text:hover strong {
+  color: red;
+}
+
+.price-box-image {
+  height: 50vh;
+  margin: 15px;
+}
+.price-box-image:hover {
+  transform: scale(1.2) rotate(37deg);
+}
+
+.price-title {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  z-index: 3;
+}
+.price-title:hover {
+  color: darkblue;
+}
+
 .contact-button {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   border-radius: 10px;

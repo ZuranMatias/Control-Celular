@@ -11,7 +11,7 @@ const SideBar = (props) => {
           <SidebarLink address={'/features'}>Funciones</SidebarLink>
           <SidebarLink address={'/faq'}>Preguntas</SidebarLink>
           <SidebarLink address={'/contacto'}>Contacto</SidebarLink>
-          <SidebarLink address={'/pricing'}>Comprar</SidebarLink>
+          <SidebarLink address={'/pricing'}>Precios</SidebarLink>
         </ul>
           {/* <div onClick={props.toggleSidebar} className="sidebar-toggle-sticky">
             <img src="./menu.png" alt="mobile menu toggle" style={{ maxWidth: '50%', maxHeight: '40%' }} />
