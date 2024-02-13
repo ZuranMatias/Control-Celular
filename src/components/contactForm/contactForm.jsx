@@ -2,7 +2,7 @@ import React from 'react'
 import Swal from 'sweetalert2'
 import aosOptions from '../AOS/AOS_Options'
 
-const formSubmitEmail = 'https://formsubmit.co/zuranmatias@gmail.com'
+const formSubmitEmail = 'https://formsubmit.co/controlcelular.arg@gmail.com'
 async function fetchSubmit() {
   fetch('https://formsubmit.co/ajax/your@email.com', {
     method: 'POST',

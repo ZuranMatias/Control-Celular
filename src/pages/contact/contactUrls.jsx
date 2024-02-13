@@ -1,4 +1,4 @@
-export const gmailLink = "mailto:linceinvestigacion@gmail.com?Subject=Consulta%20sobre%Aplicación%20Elite"
+export const gmailLink = "mailto:controlcelular.arg@gmail.com?Subject=Consulta%20sobre%Aplicación%20Elite"
 
 export function whatsappApiMessageGenerator(message) {
     if (!message) {message = "Hola, me interesa el software ofrecido."}

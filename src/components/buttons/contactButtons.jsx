@@ -42,7 +42,7 @@ export function GmailApiButton() {
       <a className="d-flex flex-row" style={{ textDecoration: 'none' }}
         href={gmailLink}
         target="_top"
-        onClick={() => {document.getElementById("gmailApiButtonLabel").innerHTML = "<a href='https://mail.google.com/' target='_blank'>linceinvestigacion@gmail.com</a>"}}
+        onClick={() => {document.getElementById("gmailApiButtonLabel").innerHTML = "<a href='https://mail.google.com/' target='_blank'>controlcelular.arg@gmail.com</a>"}}
         name="gmailButton"
       >
         <Button size="lg" variant="success" className='contact-button-icon' style={{ ...styleIcon('#DB4437') }}> <FontAwesomeIcon size="xl" icon={faEnvelope} /> </Button>
