@@ -1,11 +1,13 @@
 import { whatsappApiMessageGenerator } from '../contact/contactUrls'
 
-function priceCardParser(title, price, children, whatsappMessage) {
+function priceCardParser(title, price, children, whatsappMessage, remoteInstall) {
+  if (!remoteInstall) {remoteInstall = false}
   return {
     title: title,
     price: price,
     children: children,
     whatsappMessage: whatsappApiMessageGenerator(whatsappMessage),
+    remoteInstallVerified: remoteInstall
   }
 }
 
@@ -45,11 +47,13 @@ export const pricesList = [
     240,
     childrenParser(),
     'Hola. Me interesa el producto de monitoreo celular y me gustaría adquirir la licencia por 182 Días.',
+    true
   ),
   priceCardParser(
     'Licencia un Año',
     330,
     childrenParser(),
     'Hola. Me interesa el producto de monitoreo celular y me gustaría adquirir la licencia por un año.',
+    true
   ),
 ]

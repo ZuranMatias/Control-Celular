@@ -21,7 +21,7 @@ function Pricing() {
             <PriceCardTextList/>
           </div>
         </div>
-        <p className="font-weight-light text-danger">El servicio de instalación remota es de usd $50</p>
+        <p className="font-weight-light text-danger h4" style={{textAlign: "center"}}> <strong>El servicio de instalación remota es de usd $50. <br/> La licencia de 1 año y 182 días ya tiene instalación remota bonificada.</strong></p>
       </div>
     </>
   )

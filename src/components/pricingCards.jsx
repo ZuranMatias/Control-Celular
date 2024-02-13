@@ -27,6 +27,7 @@ function alertaInstalacionRemota(link) {
   Swal.fire({
     title: "¿Le gustaría adquirir el servicio de instalación remota?",
     text: "Instalamos el Programa por usted a Distancia, usted solo debe tener el celular en sus manos por unos minutos. Precio de 50 USD.",
+    footer: "<strong style='color: red;'>Servicio ya bonificado para licencias de 182 días o un año.</strong>",
     icon: "question",
     showCancelButton: true,
     confirmButtonColor: "#3085d6",
@@ -67,7 +68,7 @@ return (
 )
 }
 
-export function PricingText({title, children, whatsappMessage, buttonClassName, price}) {
+export function PricingText({title, children, whatsappMessage, buttonClassName, price, remoteInstallVerified}) {
 
   !buttonClassName ? buttonClassName = defaultButton : buttonClassName += defaultButton 
   !title ? title = "title" : ""
@@ -78,6 +79,7 @@ return (
     <h3 className='h2 pricing-text' onClick={() => {alertaCompra(whatsappMessage)}}>
       <strong>{title}: </strong>
       <span className='pricing-card-title' style={{fontWeight: "600"}}>{price}<small className='text-muted'>$usd</small></span>
+      {remoteInstallVerified && <p style={{fontSize: "medium", color: "darkred"}}>Instalación remota Incluída</p>}
     </h3>
   </>
 )
@@ -94,6 +96,7 @@ export function PriceCardTextList() {
         children={pricesList[i].children}
         price={pricesList[i].price}
         whatsappMessage={pricesList[i].whatsappMessage}
+        remoteInstallVerified={pricesList[i].remoteInstallVerified}
       />,
     )
   }
