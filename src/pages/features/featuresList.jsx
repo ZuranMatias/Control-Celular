@@ -16,7 +16,9 @@ import {
   faSdCard,
   faInfoCircle,
 } from '@fortawesome/free-solid-svg-icons'
+
 //  { icon: faKeyboard, text: "", desc: "" },
+
 export const featuresList = [
   {
     icon: faUser,
@@ -31,7 +33,7 @@ export const featuresList = [
   {
     icon: faWhatsapp,
     text: 'Actividad de Whatsapp',
-    desc: 'Lector de tarjeta SD accesible desde la aplicación',
+    desc: 'Permite interceptar mensajes, fotos y videos además de grabar llamadas.',
   },
   {
     icon: faMessage,
