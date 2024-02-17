@@ -862,6 +862,12 @@ body {
   height: 50vh;
   margin: 15px;
 }
+@media screen and (max-width: 736px) {
+  .price-box-image {
+    height: auto;
+    width: 80%;
+  }
+}
 .price-box-image:hover {
   transform: scale(1.2) rotate(37deg);
 }

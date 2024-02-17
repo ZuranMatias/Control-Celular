@@ -49,10 +49,9 @@
     margin: 15px;
 
     //cursor: pointer;
+    @media screen and (max-width: 736px) { height: auto; width: 80%; }
 
-    &:hover {
-        transform: scale(1.2) rotate(37deg);
-    }
+    &:hover { transform: scale(1.2) rotate(37deg); }
 }
 
 .price-title {
