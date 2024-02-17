@@ -10,6 +10,7 @@ $line-color: rgba(#000000,0.3);
 .features-container {
     @include background-tint($features-image-tint, $features-image-url);
     background-size: cover;
+    background-position: center;
 
     & h1,h2 {
         color: white;
@@ -37,7 +38,10 @@ $line-color: rgba(#000000,0.3);
     @media screen and (max-width: 736px){}
 
     @media screen and (min-width: 737px){
-        max-height: 150vh;
+        //max-height: 200vh;
         justify-content: space-evenly;
+        align-items: stretch;
+        width: 95vw;
+        flex-direction: row;
     }
 }

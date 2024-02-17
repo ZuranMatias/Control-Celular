@@ -758,6 +758,7 @@ body {
 .features-container {
   background-image: linear-gradient(rgba(28, 28, 28, 0.7), rgba(28, 28, 28, 0.7)), url("/Images/features/features.jpg");
   background-size: cover;
+  background-position: center;
 }
 .features-container h1, .features-container h2 {
   color: white;
@@ -784,8 +785,10 @@ body {
 }
 @media screen and (min-width: 737px) {
   .cards-container {
-    max-height: 150vh;
     justify-content: space-evenly;
+    align-items: stretch;
+    width: 95vw;
+    flex-direction: row;
   }
 }
 
@@ -1171,14 +1174,15 @@ body {
   background-color: #3466AA;
   border-radius: 15px;
   width: 30vw;
-  height: 30vh;
+  min-height: 30vh;
+  height: 90%;
   padding: 1vw;
   margin: 1.5vh;
   margin-bottom: 2vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  opacity: 0.9;
+  justify-content: space-between;
+  opacity: 0.8;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 .feature-card:hover {
