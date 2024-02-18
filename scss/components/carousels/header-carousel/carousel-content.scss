@@ -70,3 +70,42 @@
     align-items: center;
     text-align: center;
 }
+
+.carousel-free-trial-image {
+    cursor: pointer;
+    
+    height: 100%;
+    width: auto;
+
+    animation: growShrink 4s infinite;
+
+    @media screen and (min-width: 737px){
+        //position:relative;
+        left: 10vw;
+    }
+
+    @media screen and (max-width: 736px){
+        padding-top: 110px;
+        width: 75vw !important;
+        height: auto;
+    }
+}
+
+#livepanel {
+    border-radius: 15px;
+
+    @media screen and (min-width: 737px){
+        width: 30vw;
+        margin: 10px;
+    }
+
+    @media screen and (max-width: 736px){
+        height: 20vh;
+        margin: 2vh;
+        width: auto;
+    } 
+
+    &:hover {
+        border-radius: 0;
+    }
+}

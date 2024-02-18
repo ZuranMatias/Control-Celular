@@ -1,0 +1,13 @@
+@keyframes growShrink {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+
+/*# sourceMappingURL=growshrink.css.map */
