@@ -8,7 +8,7 @@ function HelmetComponent() {
       <title>Elite</title>
       <meta
         name="description"
-        content="Obtén acceso completo a la información de cualquier teléfono con nuestra aplicación de control parental."
+        content="Ofrecemos Monitoreo de Celulares en Argentina. Nuestro servicio de Control Celular permite monitoreo de whatsapp, llamadas, Redes Sociales, localización por GPS, etc."
       />
       <meta
         name="keywords"
