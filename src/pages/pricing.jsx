@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react'
+import WhatsappStickyButton from '../components/buttons/whatsappStickyButton'
 
 import { PriceCardTextList } from '../components/pricingCards'
 
@@ -23,6 +24,7 @@ function Pricing() {
         </div>
         <p className="font-weight-light text-danger h4" style={{textAlign: "center", padding: "2vh"}}> <strong>El servicio de instalación remota es de usd $50. <br/> La licencia de 1 año y 182 días ya tiene instalación remota bonificada.</strong></p>
       </div>
+      <WhatsappStickyButton/>
     </>
   )
 }
