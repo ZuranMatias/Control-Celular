@@ -20,8 +20,12 @@
 .pricing-text {
     //textTransform: "uppercase", fontWeight: "600", color: "darkblue", 
     width: 30vw;
+
     display: flex;
     flex-wrap: wrap;
+
+    flex-direction: column;
+
     justify-content: space-between;
 
     cursor: pointer;

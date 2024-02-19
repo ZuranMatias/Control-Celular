@@ -1,8 +1,11 @@
 export const gmailLink = "mailto:controlcelular.arg@gmail.com?Subject=Consulta%20sobre%Aplicación%20Elite"
 
 export function whatsappApiMessageGenerator(message) {
+    function original(msg) {return `whatsapp://send?text=${msg}&phone=5491140401176`}
+    function wame(msg) {return `https://wa.me/5491140401176/?text=${msg}`}
+
     if (!message) {message = "Hola, me interesa el software ofrecido."}
-    return `whatsapp://send?text=${message}&phone=5491140401176`
+    return wame(message)
 }
 
 export function addTextBeforePhone(originalString, additionalText) {

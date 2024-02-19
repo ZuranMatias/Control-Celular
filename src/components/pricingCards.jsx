@@ -78,7 +78,9 @@ return (
   <> 
     <h3 className='h2 pricing-text' onClick={() => {alertaCompra(whatsappMessage)}}>
       <strong>{title}: </strong>
+      <div>
       <span className='pricing-card-title' style={{fontWeight: "600"}}>{price}<small className='text-muted'>$usd</small></span>
+      </div>
       {remoteInstallVerified && <p style={{fontSize: "medium", color: "darkred"}}>Instalación remota Incluída</p>}
     </h3>
   </>
