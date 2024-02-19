@@ -4,7 +4,7 @@ export function whatsappApiMessageGenerator(message) {
     function original(msg) {return `whatsapp://send?text=${msg}&phone=5491140401176`}
     function wame(msg) {return `https://wa.me/5491140401176/?text=${msg}`}
 
-    if (!message) {message = "Hola, me interesa el software ofrecido."}
+    if (!message) {message = "Hola, estoy interesado en el período de prueba gratis de 2 días de Elite."}
     return wame(message)
 }
 
