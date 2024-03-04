@@ -24,6 +24,23 @@ const pricingRedirect = async (cb) => {
   return cb('/pricing')
 }
 
+export const whatsappAlertaFreeTrial = async () => {
+  Swal.fire({
+    title: 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+    text: 'Podemos redirigirlo a la página de precios para que use esta promo.',
+    icon: 'question',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Sí',
+    cancelButtonText: 'No, gracias',
+  }).then((result) => {
+    if (result.isConfirmed) {
+      window.location.href = whatsappTrialLink;
+    }
+  })
+}
+
 const getRandomNumber = () => Math.floor(Math.random() * 21) - 10
 
 function picture(url) {
@@ -47,8 +64,9 @@ function SlideFreeTrial() {
     <>
       <div
         className="row-column"
-        style={{ width: '100%'}}
-        onClick={async () => alertaFreeTrial(navigate)}
+        style={{ width: '100%' }}
+        /* onClick={async () => alertaFreeTrial(navigate)} */
+        onClick={async () => nuevaAlertaFreeTrial()}
       >
         {picture('./Images/Home/free-trial.png')}
         <p
@@ -64,9 +82,8 @@ function SlideFreeTrial() {
           }}
         >
           <strong>
-          <span className="mobile-only h5">
-              ¡Use nuestra aplicación por dos días
-              libres de costo! <br />
+            <span className="mobile-only h5">
+              ¡Use nuestra aplicación por dos días libres de costo! <br />
               <span style={{ textDecoration: 'underline' }}>
                 Es necesario acceso físico al <br />
                 celular que se quiera interceptar
