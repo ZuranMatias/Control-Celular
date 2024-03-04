@@ -6,12 +6,12 @@ const SideBar = (props) => {
   return (
     <>
       <div className={sidebarClass}>
-        <ul>
+        <ul onClick={props.toggleSidebar}>
           <SidebarLink address={'/'}>Inicio</SidebarLink>
           <SidebarLink address={'/features'}>Funciones</SidebarLink>
           <SidebarLink address={'/faq'}>Preguntas</SidebarLink>
           <SidebarLink address={'/contacto'}>Contacto</SidebarLink>
-          <SidebarLink address={'/pricing'}>Precios</SidebarLink>
+          {/* <SidebarLink address={'/pricing'}>Precios</SidebarLink> */}
         </ul>
           {/* <div onClick={props.toggleSidebar} className="sidebar-toggle-sticky">
             <img src="./menu.png" alt="mobile menu toggle" style={{ maxWidth: '50%', maxHeight: '40%' }} />
