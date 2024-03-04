@@ -26,14 +26,14 @@ const pricingRedirect = async (cb) => {
 
 export const whatsappAlertaFreeTrial = async () => {
   Swal.fire({
-    title: 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
-    text: 'Podemos redirigirlo a la página de precios para que use esta promo.',
-    icon: 'question',
+    title: "<strong style='color: red;'>IMPORTANTE</strong>",
+    html: "Para instalar la aplicación, es necesario el acceso <strong>FÍSICO</strong> al celular.</br></br> Para probar nuestro producto, debe tener el dispositivo <strong>DESBLOQUEADO</strong> en su posesión.",
+    icon: 'warning',
     showCancelButton: true,
     confirmButtonColor: '#3085d6',
     cancelButtonColor: '#d33',
-    confirmButtonText: 'Sí',
-    cancelButtonText: 'No, gracias',
+    confirmButtonText: 'Puedo instalar la Aplicación',
+    cancelButtonText: 'Cancelar',
   }).then((result) => {
     if (result.isConfirmed) {
       window.location.href = whatsappTrialLink;
@@ -47,7 +47,7 @@ function picture(url) {
   return (
     <div
       className="grow-on-hover"
-      style={{ height: '100%', cursor: 'pointer' }}
+      style={{ height: '110%', cursor: 'pointer' }}
     >
       <img
         src={url}
@@ -62,14 +62,10 @@ function SlideFreeTrial() {
   const navigate = useNavigate()
   return (
     <>
-      <div
-        className="row-column"
-        style={{ width: '100%' }}
-        /* onClick={async () => alertaFreeTrial(navigate)} */
-        onClick={async () => nuevaAlertaFreeTrial()}
-      >
+      <div className="row-column" style={{ width: '100%' }} /* onClick={async () => alertaFreeTrial(navigate)} */ onClick={async () => whatsappAlertaFreeTrial()} >
         {picture('./Images/Home/free-trial.png')}
-        <p
+        
+        {/* <p
           className="h3"
           style={{
             alignSelf: 'center',
@@ -99,7 +95,11 @@ function SlideFreeTrial() {
               </span>
             </span>
           </strong>
-        </p>
+        </p> */}
+
+        <div className='free-trial-warning'>
+          <h5>Se requiere acceso <strong>FÍSICO</strong> al celular <strong>DESBLOQUEADO</strong></h5>
+        </div>
       </div>
     </>
   )

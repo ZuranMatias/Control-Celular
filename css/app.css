@@ -730,6 +730,57 @@ body {
   transform: scale(1.05);
 }
 
+.free-trial-warning {
+  background: rgb(156, 46, 22);
+  background: linear-gradient(0deg, rgb(156, 46, 22) 0%, rgb(231, 14, 14) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  opacity: 0.75;
+  border: 6px solid white;
+  bottom: 2rem;
+  right: 25%;
+  padding: 7%;
+  cursor: pointer;
+  animation: bobbing 1s infinite alternate;
+}
+.free-trial-warning:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+@media screen and (min-width: 737px) {
+  .free-trial-warning:hover {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media screen and (max-width: 736px) {
+  .free-trial-warning {
+    width: 80%;
+    height: 15vh;
+    right: auto;
+    bottom: auto;
+    margin-top: 40px;
+    position: relative;
+    border-radius: 25px;
+  }
+}
+
+/*backgroundColor: "red", 
+          display: "flex", 
+          justifyItems: "center", 
+          alignItems: "center",
+          borderRadius: "50%",
+          width: "200px",
+          height: "200px",
+          position: "absolute",
+          bottom: "10px",
+          left: "10%"
+          */
 .header-contact-image {
   background-image: linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.3)), url("/Images/teen2.png");
   background-size: cover;
