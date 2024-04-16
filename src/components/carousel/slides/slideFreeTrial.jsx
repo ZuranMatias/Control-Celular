@@ -63,7 +63,7 @@ function SlideFreeTrial() {
   return (
     <>
       <div className="row-column" style={{ width: '100%' }} /* onClick={async () => alertaFreeTrial(navigate)} */ onClick={async () => whatsappAlertaFreeTrial()} >
-        {picture('./Images/Home/free-trial.png')}
+        {picture('./Images/free-trial.png')}
         
         {/* <p
           className="h3"

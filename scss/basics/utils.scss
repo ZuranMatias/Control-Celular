@@ -80,3 +80,51 @@ $transition-speed: all 0.5s ease-out;
       transform: scale(1.2);
     }
   }
+
+  .subtitle {
+    opacity: 0.1;
+    z-index: 1;
+    position: relative;
+    justify-self: center;
+    text-align: center;
+
+    text-transform: uppercase;
+    font-weight: bold;
+
+    transform: translate(0%, 100%) scale(1);
+    margin: 0;
+  }
+
+  .h1 {
+    font-size: 2em; /* Adjust size as needed */
+    font-weight: bold; /* Mimic boldness of <h1> */
+    /* Additional styles if desired */
+  }
+  
+  /* Mimic styles of <h2> */
+  .h2 {
+    font-size: 1.5em; /* Adjust size as needed */
+    font-weight: bold; /* Mimic boldness of <h2> */
+    /* Additional styles if desired */
+  }
+  
+  /* Mimic styles of <h3> */
+  .h3 {
+    font-size: 1.17em; /* Adjust size as needed */
+    font-weight: bold; /* Mimic boldness of <h3> */
+    /* Additional styles if desired */
+  }
+
+  /* Mimic styles of <h4> */
+.h4 {
+  font-size: 1em; /* Adjust size as needed */
+  font-weight: bold; /* Mimic boldness of <h4> */
+  /* Additional styles if desired */
+}
+
+/* Mimic styles of <h5> */
+.h5 {
+  font-size: 0.83em; /* Adjust size as needed */
+  font-weight: bold; /* Mimic boldness of <h5> */
+  /* Additional styles if desired */
+}

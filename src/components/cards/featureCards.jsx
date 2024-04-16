@@ -8,8 +8,8 @@ function FeatureCards({icon, title, desc}) {
   return (
     <div className='feature-card'>
         <div className='feature-icon'><FontAwesomeIcon size="3x" icon={icon} style={{ margin: '2vw' }} /></div>
-        <h4>{title}</h4>
-        <h5>{desc}</h5>
+        <h3 className='h4'>{title}</h3>
+        <h4 className='h5'>{desc}</h4>
     </div>
   )
 }

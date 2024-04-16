@@ -23,7 +23,7 @@ export const featuresList = [
   {
     icon: faUser,
     text: 'Contactos del Dispositivo',
-    desc: 'Acceso a todos los contactos con nombre y número telefónico',
+    desc: 'Acceder a los contactos de un celular con nombre y número telefónico',
   },
   {
     icon: faInfoCircle,
@@ -33,7 +33,7 @@ export const featuresList = [
   {
     icon: faWhatsapp,
     text: 'Actividad de Whatsapp',
-    desc: 'Permite interceptar mensajes, fotos y videos además de grabar llamadas.',
+    desc: 'Permite monitorear whatsapp, interceptando mensajes, fotos y videos además de grabar llamadas.',
   },
   {
     icon: faMessage,
@@ -44,7 +44,7 @@ export const featuresList = [
   {
     icon: faLocationDot,
     text: 'Posición Geográfica del Dispositivo',
-    desc: 'Sepa la posición exacta del dispositivo en tiempo real con posibilidad de consultar una ruta hacia el dispositivo o geo Fence.',
+    desc: 'Encuentra la posición exacta del dispositivo celular en tiempo real con posibilidad de consultar una ruta hacia el dispositivo o geo Fence.',
   },
   {
     icon: faSdCard,
@@ -66,7 +66,7 @@ export const featuresList = [
   {
     icon: faPhone,
     text: 'Interceptar Llamadas',
-    desc: 'Graba las charlas por teléfono',
+    desc: 'Grabar o escuchar las charlas por teléfono',
   },
   {
     icon: faCamera,

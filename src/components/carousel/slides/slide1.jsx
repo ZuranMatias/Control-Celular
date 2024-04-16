@@ -23,8 +23,10 @@ function Slide1() {
           {...aosOptions.fadeUpXXDelay} />
           
           <div>
-            <h1 {...aosOptions.fadeUpXXDelay}>ELITE</h1>
-            <h4 {...aosOptions.fadeUpXXDelay}> SOFTWARE DE MONITOREO DE CONTROL PARENTAL </h4>
+            <h2 {...aosOptions.fadeUpXXDelay}>ELITE</h2>
+            <div className='d-flex flex-row' {...aosOptions.fadeUpXXDelay}>
+              <h2 >Software de Monitoreo de Control Parental</h2>
+            </div>
           </div>
         </div>
 

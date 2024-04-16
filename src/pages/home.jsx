@@ -69,9 +69,9 @@ function Home() {
           >
             <div style={{ textAlign: 'center' }}>
               <h1 className="title" {...aosOptions.fadeUp}>
-                ELITE
+                Celular Espía <br/> ELITE
               </h1>
-              <p {...aosOptions.fadeUpXDelay} style={{ textAlign: 'center' }}>
+              <p {...aosOptions.fadeUpXDelay} style={{ textAlign: 'center', marginBottom: "5rem" }}>
                 Nuestro Software está diseñado para realizar el monitoreo de
                 celulares con distintos fines tales como la seguridad y el
                 control parental.
@@ -146,9 +146,9 @@ function Home() {
       {/* Instructions Information */}
       <section {...aosOptions.fadeUp}>
         <div style={gradient2} className="blank-container d-flex flex-column">
-          <h1 style={{ textAlign: 'center' }} {...aosOptions.fadeUp}>
+          <h2 style={{ textAlign: 'center', marginTop: "2.5rem" }} {...aosOptions.fadeUp}>
             ¡Control Completo en 3 Pasos!
-          </h1>
+          </h2>
           <div className="row-column">
             <CircleIconButton
               {...aosOptions.fadeUp}

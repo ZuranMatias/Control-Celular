@@ -23,7 +23,7 @@ function HeaderCarousel({ height, upperMargin }) {
         showStatus={false}
         preventMovementUntilSwipeScrollTolerance={true}
         swipeScrollTolerance={30}
-        autoPlay={true}
+        autoPlay={false} //Change Later
         interval={5000}
         stopOnHover={false}
       >

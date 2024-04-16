@@ -4,10 +4,10 @@ function CarouselContent({children, height, backgroundNumber, style, clear}) {
   if (!backgroundNumber) {backgroundNumber = "1"}
   let carouselClass = clear ? "carousel-background-clear" : "carousel-background"
   return (
-    <div className='carousel-height' style={style}>
+    <section className='carousel-height' style={style}>
         <div className='carousel-content'> {children} </div>
         {backgroundNumber > 0 && <div className={carouselClass} style={{backgroundImage: `url(./Images/carousel${backgroundNumber}.png)` }}/>}
-      </div>
+      </section>
   )
 }
 

@@ -36,7 +36,7 @@ function IconButton({style, type, children}) {
         <img src={image} />
       </div>
       <div className="text-container">
-        <h5 style={{padding: "1rem", color: "white"}}>{children}</h5>
+        <h2 style={{padding: "1rem", color: "white"}} className='h5'>{children}</h2>
       </div>
     </div>
     </NavLink>

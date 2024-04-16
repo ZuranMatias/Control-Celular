@@ -8,7 +8,10 @@ function Slide2() {
   return (
     <div className="carousel-content-container evenly-spaced text-center">
       <div>
-        <h2 className="carousel-title"> PROTECCIÓN SILENCIOSA </h2>
+        <div>
+        <h2 className="carousel-title"> APLICACIÓN DE MONITOREO SILENCIOSO </h2>
+        </div>
+        
         <h3 style={{ marginTop: '1rem' }}>
           SEPA TODO LO QUE HAY QUE SABER
           <hr style={{ width: '90%', margin: '1vh' }} />

@@ -18,11 +18,11 @@ function Slide5() {
   return (
     <div className="d-flex flex-column justify-content-around">
       <div>
-        <h1 className="carousel-title"> LAS PERSONAS ENGAÑAN </h1>
-        <h2>
+        <h2 className="carousel-title"> LAS PERSONAS ENGAÑAN </h2>
+        <h3>
           <hr style={{ width: '100%', margin: '1vh', height: '1px' }} />
           PERO NOSOTROS NO
-        </h2>
+        </h3>
       </div>
 
       <div className="row-column justify-content-around desktop-only">
