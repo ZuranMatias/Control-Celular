@@ -1,0 +1,70 @@
+$pp-bg-opacity: 0.2;
+$pp-bg-size: 10em;
+
+//$pp-bg-primary-color: #0a248e;
+//$pp-bg-secondary-color: #3652b9;
+$pp-bg-secondary-color: #103e70;
+$pp-bg-primary-color: #0c1746;
+
+$pp-box-padding: 4rem;
+$pp-box-min-width: 50%;
+$pp-box-min-width-mobile: 80%;
+
+.pp-bg-pattern {
+  background: repeating-linear-gradient(
+    135deg,
+    rgba($pp-bg-primary-color, $pp-bg-opacity) 0,
+    rgba($pp-bg-primary-color, $pp-bg-opacity) 5%,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: $pp-bg-size $pp-bg-size;
+  background-color: $pp-bg-secondary-color;
+
+  //position: absolute;
+  width: 100%;
+  height: 100%;
+
+  min-height: 90vh;
+
+  z-index: -1;
+}
+
+.pp-title {
+    color: white;
+    opacity: 1;
+
+    @media screen and (max-width: 736px) { width: $pp-box-min-width-mobile }
+    @media screen and (min-width: 737px) { width: $pp-box-min-width }
+
+    border: 5px solid white; /* Set border width and color */
+    padding: 2rem;
+
+    box-shadow: 0.5rem 1rem 1rem rgba($color: #000000, $alpha: 0.3);
+    text-shadow: 0.5rem 1rem 1rem rgba($color: #000000, $alpha: 0.3);
+    text-align: center;
+}
+
+.pp-content {
+    color: $pp-bg-secondary-color;
+
+    @media screen and (max-width: 736px) { width: $pp-box-min-width-mobile }
+    @media screen and (min-width: 737px) { width: $pp-box-min-width }
+
+    background-color: white;
+    opacity: 1;
+
+    margin-top: 3rem;
+
+    margin: 20px;
+
+    box-shadow: 0.5rem 1rem 1rem rgba($color: #000000, $alpha: 0.3);
+
+    & div{
+        margin: 20px;
+    }
+}
+
+.pp-paragraph{
+    & a {text-decoration: none;}
+}

@@ -195,7 +195,7 @@ function Home() {
           <div className="row-column">
             <div className="grow-on-hover">
                 <img
-                  src="/Images/Home/free-trial.png"
+                  src="/Images/free-trial.png"
                   className="free-trial"
                   {...aosOptions.fadeUp}
                   onClick={() => whatsappAlertaFreeTrial()}

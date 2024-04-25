@@ -10,6 +10,7 @@ function Navbar({isVisible}) {
       <NavbarLink address={"/features"}>¿Qué Funciones Tiene?</NavbarLink>
       <NavbarLink address={"/faq"}>¿Preguntas?</NavbarLink>
       <NavbarLink address={"/contacto"}>Contacto</NavbarLink>
+      <NavbarLink address={"/privacyPolicy"}>Política de Privacidad</NavbarLink>
       {/* <NavbarLink address={"/pricing"}>Precios</NavbarLink> */}
       </ul>
     </nav>

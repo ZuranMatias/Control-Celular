@@ -11,6 +11,7 @@ const SideBar = (props) => {
           <SidebarLink address={'/features'}>Funciones</SidebarLink>
           <SidebarLink address={'/faq'}>Preguntas</SidebarLink>
           <SidebarLink address={'/contacto'}>Contacto</SidebarLink>
+          <SidebarLink address={'/privacyPolicy'}>Política de<br/>Privacidad</SidebarLink>
           {/* <SidebarLink address={'/pricing'}>Precios</SidebarLink> */}
         </ul>
           {/* <div onClick={props.toggleSidebar} className="sidebar-toggle-sticky">

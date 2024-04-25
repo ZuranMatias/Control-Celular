@@ -9,7 +9,7 @@
 //Animations
 @import './animations/bobbing.scss';
 @import './animations/fading.scss';
-@import "./animations/growshrink.scss";
+@import './animations/growshrink.scss';
 
 //Components
 //Component Mixins
@@ -18,6 +18,7 @@
 
 //Dividers
 @import './components/dividers/shadow-divider.scss';
+@import './components/dividers/spikes.scss';
 
 //Pages
 @import './components/pages/home/home.scss';
@@ -25,7 +26,8 @@
 @import './components/pages/featues/features.scss';
 @import './components/pages/faq/questions.scss';
 @import './components/pages/faq/background.scss';
-@import "./components/pages/pricing/cards.scss";
+@import './components/pages/pricing/cards.scss';
+@import './components/pages/privacyPolicy/privacyPolicy.scss';
 
 //Buttons
 @import './components/buttons/contact-button.scss';
@@ -38,8 +40,8 @@
 @import './components/carousels/header-carousel/carousel-content.scss';
 
 //Images
-@import "./components/images/framed.scss";
-@import "./components/images/sizes.scss";
+@import './components/images/framed.scss';
+@import './components/images/sizes.scss';
 
 //Cards
 @import './components/cards/feature-cards.scss';
@@ -52,4 +54,4 @@
 @import './components/header.scss';
 @import './components/section-title.scss';
 @import './components/sidebar.scss';
-@import "./components/form.scss";
+@import './components/form.scss';
