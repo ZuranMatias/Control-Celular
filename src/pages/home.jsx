@@ -69,7 +69,7 @@ function Home() {
           >
             <div style={{ textAlign: 'center' }}>
               <h1 className="title" {...aosOptions.fadeUp}>
-                Celular Espía <br/> ELITE
+                ELITE
               </h1>
               <p {...aosOptions.fadeUpXDelay} style={{ textAlign: 'center', marginBottom: "5rem" }}>
                 Nuestro Software está diseñado para realizar el monitoreo de
