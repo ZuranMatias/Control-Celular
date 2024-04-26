@@ -1,15 +1,17 @@
 import React from 'react'
 
-import ProductPolicyParagraph from './ppParagraph.jsx'
-import aosOptions from '../../components/AOS/AOS_Options.js'
+import ProductPolicyParagraph from './privacyPolicy/ppParagraph.jsx'
+import aosOptions from '../components/AOS/AOS_Options.js'
+import { useEffect } from 'react'
 
-import { ppContent } from './ppContent.js'
+import { ppContent } from './privacyPolicy/ppContent.js'
 
 function PrivacyPolicy() {
+  useEffect(() => { window.scrollTo(0, 0)}, [])
 
   let ppText = []
   ppContent.forEach((element, index) => {
-    ppText.push(<ProductPolicyParagraph title={ppContent[index].title}>{ppContent[index].content}</ProductPolicyParagraph>)
+    ppText.push(<ProductPolicyParagraph key={`ppText${index}`} title={ppContent[index].title}>{ppContent[index].content}</ProductPolicyParagraph>)
   });
 
   return (

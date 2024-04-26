@@ -26,7 +26,7 @@ function Contacto() {
         <img className="header-contact-image" />
         <h1 {...aosOptions.fadeUp}>Contacto</h1>
       </header>
-      <Separator id="headerSeparator" scrollTargetId={'openingSection'} />
+      <Separator id="headerSeparator" scrollTargetUrl={'/contacto#openingSection'} />
       <div id="openingSection" />
 
       {/* Titles */}

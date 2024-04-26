@@ -45,7 +45,7 @@ function Home() {
       </section>
       <Separator
         id="headerSeparator"
-        scrollTargetId={'openingSection'}
+        scrollTargetUrl={'/#openingSection'}
         color={'rgb(255,255,255)'}
       />
 

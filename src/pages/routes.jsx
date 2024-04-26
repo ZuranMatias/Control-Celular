@@ -7,7 +7,7 @@ import Contacto from './contact'
 import FAQ from './faq'
 import Features from './features'
 import Pricing from './pricing'
-import PrivacyPolicy from './privacyPolicy/privacyPolicy'
+import PrivacyPolicy from './privacyPolicy'
 
 function PageRoutes({children}) {
   return (

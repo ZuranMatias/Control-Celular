@@ -3,7 +3,7 @@ import { HashLink } from 'react-router-hash-link'
 
 const classes = 'd-flex flex-column align-items-center'
 
-function Separator({ color, children, shadowOpacity, scrollTargetId, circleless, flat }) {
+function Separator({ color, children, shadowOpacity, scrollTargetUrl, circleless, flat }) {
   var scrollButton
   !color ? (color = 'rgb(255,255,255)') : ' '
   !shadowOpacity ? (shadowOpacity = 0.3) : ' '
@@ -11,10 +11,10 @@ function Separator({ color, children, shadowOpacity, scrollTargetId, circleless,
   let minimalHeight
   !flat ? minimalHeight = '10vh' : minimalHeight = "0"
 
-  scrollTargetId
+  scrollTargetUrl
     ? (scrollButton = (
-        //<a href={`#${scrollTargetId}`} id="scrollButton">
-          <HashLink smooth to={`/#${scrollTargetId}`} id="scrollButton">
+        //<a href={`#${scrollTargetUrl}`} id="scrollButton">
+          <HashLink smooth to={`${scrollTargetUrl}`} id="scrollButton">
             <img src="/icons/down-arrow.png" />
           </HashLink>
         //</a>

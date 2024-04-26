@@ -5,9 +5,7 @@ import WhatsappStickyButton from '../components/buttons/whatsappStickyButton'
 import { PriceCardTextList } from '../components/pricingCards'
 
 function Pricing() {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+  useEffect(() => { window.scrollTo(0, 0) }, [])
 
   return (
     <>
