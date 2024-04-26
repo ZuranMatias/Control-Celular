@@ -1,5 +1,5 @@
 //Packages
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, HashRouter } from 'react-router-dom'
 
 //Components
 import PageRoutes from './pages/routes'
@@ -21,11 +21,11 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <HelmetComponent />
         <NavbarContainer />
         <PageRoutes />
-      </BrowserRouter>
+      </HashRouter>
       <Footer />
     </>
   )

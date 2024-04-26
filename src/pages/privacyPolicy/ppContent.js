@@ -11,7 +11,7 @@ export const ppContent = [
     },
     {
         title: `Información Personal`,
-        content: `Cuando utiliza nuestro sitio web y nuestros productos, nos proporciona cierta información de identificación personal que puede ser utilizada para comunicarse con usted o identificarlo. Esto puede incluir su dirección de correo electrónico, nombre, apellido y número de teléfono. Podemos utilizar estos datos para enviarle boletines informativos, materiales promocionales u otra información que pueda ser de su interés. Puede optar por no recibir estas comunicaciones siguiendo el enlace de cancelación de suscripción o comunicándose con nosotros en <a href=”/contacto”>controlcelular.arg@gmail.com</a>.`
+        content: `Cuando utiliza nuestro sitio web y nuestros productos, nos proporciona cierta información de identificación personal que puede ser utilizada para comunicarse con usted o identificarlo. Esto puede incluir su dirección de correo electrónico, nombre, apellido y número de teléfono. Podemos utilizar estos datos para enviarle boletines informativos, materiales promocionales u otra información que pueda ser de su interés. Puede optar por no recibir estas comunicaciones siguiendo el enlace de cancelación de suscripción o comunicándose con nosotros en <a href='/#/contacto'>controlcelular.arg@gmail.com</a>.`
     },
     {
         title: `Datos de Uso`,
@@ -51,6 +51,6 @@ export const ppContent = [
     },
     {   
         title: `Contáctenos`,
-        content: `Si tiene preguntas o comentarios sobre nuestra Política de Privacidad, no dude en <a href= “/contacto”>comunicarse con nosotros</a>. Su retroalimentación es importante para nosotros y haremos todo lo posible para atender sus inquietudes.`
+        content: `Si tiene preguntas o comentarios sobre nuestra Política de Privacidad, no dude en <a href= '/#/contacto'>comunicarse con nosotros</a>. Su retroalimentación es importante para nosotros y haremos todo lo posible para atender sus inquietudes.`
     },
 ]

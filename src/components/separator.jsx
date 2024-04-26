@@ -1,4 +1,5 @@
 import React from 'react'
+import { HashLink } from 'react-router-hash-link'
 
 const classes = 'd-flex flex-column align-items-center'
 
@@ -12,10 +13,11 @@ function Separator({ color, children, shadowOpacity, scrollTargetId, circleless,
 
   scrollTargetId
     ? (scrollButton = (
-        <a href={`#${scrollTargetId}`} id="scrollButton">
-          
-          <img src="/icons/down-arrow.png" />
-        </a>
+        //<a href={`#${scrollTargetId}`} id="scrollButton">
+          <HashLink smooth to={`/#${scrollTargetId}`} id="scrollButton">
+            <img src="/icons/down-arrow.png" />
+          </HashLink>
+        //</a>
       ))
     : ' '
 
