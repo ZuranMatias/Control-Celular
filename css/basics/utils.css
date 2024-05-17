@@ -46,6 +46,7 @@
 @media screen and (max-width: 736px) {
   .responsive-picture {
     height: 40vh;
+    max-width: 90vw;
   }
 }
 

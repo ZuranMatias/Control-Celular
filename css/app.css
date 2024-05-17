@@ -46,6 +46,7 @@
 @media screen and (max-width: 736px) {
   .responsive-picture {
     height: 40vh;
+    max-width: 90vw;
   }
 }
 
@@ -781,7 +782,7 @@ body {
 }
 
 .free-trial {
-  width: auto;
+  width: 40vh;
   height: 40vh;
   align-self: center;
   margin-bottom: 5vh;
@@ -802,17 +803,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
   border-radius: 50%;
   position: absolute;
   width: 200px;
   height: 200px;
-  opacity: 0.75;
+  opacity: 0.6;
   border: 6px solid white;
   bottom: 2rem;
-  right: 25%;
   padding: 7%;
   cursor: pointer;
-  animation: bobbing 1s infinite alternate;
+  text-align: center;
 }
 .free-trial-warning:hover {
   opacity: 1;
@@ -824,12 +825,17 @@ body {
     height: 220px;
   }
 }
+@media screen and (min-width: 737px) {
+  .free-trial-warning {
+    right: 20%;
+  }
+}
 @media screen and (max-width: 736px) {
   .free-trial-warning {
-    width: 80%;
+    width: 80vw;
     height: 15vh;
-    right: auto;
-    bottom: auto;
+    right: 0;
+    bottom: 2rem;
     margin-top: 40px;
     position: relative;
     border-radius: 25px;

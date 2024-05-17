@@ -1,5 +1,5 @@
 .free-trial {
-  width: auto;
+  width: 40vh;
   height: 40vh;
 
   align-self: center;
@@ -18,14 +18,21 @@
 
 $desktop-size: 200px;
 $mobile-size: 40vh;
+
 .free-trial-warning {
-    background: rgb(156,46,22);
-    background: linear-gradient(0deg, rgba(156,46,22,1) 0%, rgba(231,14,14,1) 100%);
+  background: rgb(156, 46, 22);
+  background: linear-gradient(
+    0deg,
+    rgba(156, 46, 22, 1) 0%,
+    rgba(231, 14, 14, 1) 100%
+  );
 
   display: flex;
 
   justify-content: center;
   align-items: center;
+
+  align-self: center;
 
   border-radius: 50%;
   position: absolute;
@@ -33,7 +40,7 @@ $mobile-size: 40vh;
   width: $desktop-size;
   height: $desktop-size;
 
-  opacity: 0.75;
+  opacity: 0.6;
 
   border: 6px solid white;
 
@@ -42,30 +49,34 @@ $mobile-size: 40vh;
     transform: scale(1.1);
 
     @media screen and (min-width: 737px) {
-        width: 220px;
-        height: 220px;
-      }
+      width: 220px;
+      height: 220px;
+    }
+  }
+
+  @media screen and (min-width: 737px) {
+    right: 20%;
   }
 
   @media screen and (max-width: 736px) {
-    width: 80%;
+    width: 80vw;
     height: 15vh;
-    right: auto;
-    bottom: auto;
+    right: 0;
+    bottom: 2rem;
     margin-top: 40px;
 
     position: relative;
     border-radius: 25px;
   }
-
   bottom: 2rem;
-  right: 25%;
 
   padding: 7%;
 
   cursor: pointer;
 
-  animation: bobbing 1s infinite alternate;
+  text-align: center;
+
+  //animation: bobbing 1s infinite alternate;
 }
 
 /*backgroundColor: "red", 

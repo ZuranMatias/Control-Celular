@@ -71,7 +71,10 @@ function Home() {
               <h1 className="title" {...aosOptions.fadeUp}>
                 ELITE
               </h1>
-              <p {...aosOptions.fadeUpXDelay} style={{ textAlign: 'center', marginBottom: "5rem" }}>
+              <p
+                {...aosOptions.fadeUpXDelay}
+                style={{ textAlign: 'center', marginBottom: '5rem' }}
+              >
                 Nuestro Software está diseñado para realizar el monitoreo de
                 celulares con distintos fines tales como la seguridad y el
                 control parental.
@@ -146,7 +149,10 @@ function Home() {
       {/* Instructions Information */}
       <section {...aosOptions.fadeUp}>
         <div style={gradient2} className="blank-container d-flex flex-column">
-          <h2 style={{ textAlign: 'center', marginTop: "2.5rem" }} {...aosOptions.fadeUp}>
+          <h2
+            style={{ textAlign: 'center', marginTop: '2.5rem' }}
+            {...aosOptions.fadeUp}
+          >
             ¡Control Completo en 3 Pasos!
           </h2>
           <div className="row-column">
@@ -193,14 +199,11 @@ function Home() {
           fontColor={'white'}
         >
           <div className="row-column">
-            <div className="grow-on-hover">
-                <img
-                  src="/Images/free-trial.png"
-                  className="free-trial"
-                  {...aosOptions.fadeUp}
-                  onClick={() => whatsappAlertaFreeTrial()}
-                />
-            </div>
+            <div className="grow-on-hover d-flex flex-column" style={{width: "30%"}} {...aosOptions.fadeUp}>
+              <img src="/Images/free-trial.png" className="free-trial" onClick={() => whatsappAlertaFreeTrial()} />
+              <div className="free-trial-warning mobile-only"> <h5> Se requiere acceso <strong>FÍSICO</strong> al celular{' '} <strong>DESBLOQUEADO</strong> </h5> </div>
+               <div className="free-trial-warning desktop-only" style={{transform: "translate(10rem, 2rem) scale(0.8)"}}> <h5> Se requiere acceso <strong>FÍSICO</strong> al celular{' '} <strong>DESBLOQUEADO</strong> </h5> </div>
+             </div>
             <TitledParagraph title={'¿No está seguro? ¡Pruebe gratis!'} strong>
               Nuestro servicio ofrece un período de prubeba totalmente libre de
               costo de hasta dos días. <br />

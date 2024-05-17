@@ -37,13 +37,13 @@ function ContactForm() {
         className="d-flex flex-column justify-content-around form-container"
         {...aosOptions.fadeDown}
       >
-        <div className="d-flex" style={{ marginRight: '0.25rem' }}>
-            <div className='d-flex flex-column'>
+        <div className="row-column" style={{ marginRight: '0.25rem' }}>
+            <div className='d-flex flex-column' style={{ margin: '0.25rem', width: "100%" }}>
             <label htmlFor="name">Nombre</label>
             <input  type="text" placeholder="Nombre" name="name" id="formName" className="form-control" required />
             </div>
 
-            <div className="d-flex flex-column" style={{ marginLeft: '0.25rem' }}>
+            <div className="d-flex flex-column" style={{ margin: '0.25rem', width: "100%" }}>
                 <label htmlFor="email">Dirección de Correo</label>
                 <input type="email" placeholder="correo@hotmail.com" name="email" id="formEmail" className="form-control" required />
             </div>

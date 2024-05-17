@@ -47,7 +47,7 @@ function picture(url) {
   return (
     <div
       className="grow-on-hover"
-      style={{ height: '110%', cursor: 'pointer' }}
+      style={{ height: '110%', cursor: 'pointer',  }}
     >
       <img
         src={url}
@@ -62,41 +62,8 @@ function SlideFreeTrial() {
   const navigate = useNavigate()
   return (
     <>
-      <div className="row-column" style={{ width: '100%' }} /* onClick={async () => alertaFreeTrial(navigate)} */ onClick={async () => whatsappAlertaFreeTrial()} >
+      <div className="row-column" style={{ width: '100%', }} onClick={async () => whatsappAlertaFreeTrial()} >
         {picture('./Images/free-trial.png')}
-        
-        {/* <p
-          className="h3"
-          style={{
-            alignSelf: 'center',
-            color: 'rgb(255,215,0)',
-            textShadow: '5px 5px 5px rgba(0,0,0,0.5)',
-            backgroundColor: 'rgba(255,255,255,0)',
-            padding: '1rem',
-            borderRadius: '10px',
-            cursor: 'pointer',
-          }}
-        >
-          <strong>
-            <span className="mobile-only h5">
-              ¡Use nuestra aplicación por dos días libres de costo! <br />
-              <span style={{ textDecoration: 'underline' }}>
-                Es necesario acceso físico al <br />
-                celular que se quiera interceptar
-              </span>
-            </span>
-            <span className="desktop-only">
-              ¡Use nuestra aplicación por dos días <br />
-              libres de costo! <br />
-              <br />
-              <span style={{ textDecoration: 'underline' }}>
-                Es necesario acceso físico al <br />
-                celular que se quiera interceptar
-              </span>
-            </span>
-          </strong>
-        </p> */}
-
         <div className='free-trial-warning'>
           <h5>Se requiere acceso <strong>FÍSICO</strong> al celular <strong>DESBLOQUEADO</strong></h5>
         </div>
